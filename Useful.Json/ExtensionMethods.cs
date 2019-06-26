@@ -71,7 +71,7 @@ namespace Useful.Json
                     var sr = new StreamReader(ms);
                     using (var json = new JsonTextReader(sr))
                     {
-                        yield return JsonSerializer.CreateDefault()
+                        yield return JsonSerializer.Create(JsonSerializerSettings)
                            .Deserialize<IEnumerable<T>>(json);
                     }
                 }
@@ -86,7 +86,7 @@ namespace Useful.Json
             using (var file = File.Create(fileName))
             using (var gzip = new GZipStream(file, CompressionLevel.Optimal))
             {
-                JsonSerializer.CreateDefault()
+                JsonSerializer.Create(JsonSerializerSettings)
                     .Serialize(json, input);
                 json.Flush();
                 stream.Seek(0, SeekOrigin.Begin);
