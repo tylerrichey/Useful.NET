@@ -44,7 +44,7 @@ namespace Useful
 
     public static class CsvConfigBuilder
     {
-        public static CsvConfig UseHeader(this CsvConfig config, bool useHeader)
+        public static CsvConfig UseHeader(this CsvConfig config, bool useHeader = true)
         {
             config.Header = useHeader;
             return config;
