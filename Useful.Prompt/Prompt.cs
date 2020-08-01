@@ -8,78 +8,35 @@ using System.Threading.Tasks;
 
 namespace Useful.Prompt
 {
-    public class PromptBuilder
-    {
-        public StyleSheet StyleSheet { get; internal set; }
-        public Func<Task> OnStartupAction { get; internal set; }
-        public Func<string> PopulatePrompt { get; internal set; }
-        public Action<ConsoleKeyInfo> KeyHandler { get; internal set; }
-        public Action<string> LineHandler { get; internal set; }
-        public ConsoleKey QuitKey { get; internal set; }
-        public string QuitLine { get; internal set; }
-    }
-
     public static class Prompt
     {
-        private static int _lastPromptLength;
         public static SemaphoreSlim Lock = new SemaphoreSlim(1, 1);
+
+        private static int _lastPromptLength;
         private static PromptBuilder _promptBuilder;
 
         public static PromptBuilder Build() => new PromptBuilder
         {
-            PopulatePrompt = () => " > ",
+            PopulatePrompt = async () => await Task.FromResult(" > "),
             QuitKey = ConsoleKey.Q,
             QuitLine = "exit",
-            StyleSheet = new StyleSheet(Color.AliceBlue)
+            StyleSheet = new StyleSheet(Color.Green)
         };
 
-        public static PromptBuilder SetStyleSheet(this PromptBuilder promptBuilder, StyleSheet styleSheet)
+        public static void Reset()
         {
-            promptBuilder.StyleSheet = styleSheet;
-            return promptBuilder;
+            _lastPromptLength = 0;
+            _promptBuilder = null;
         }
 
-        public static PromptBuilder SetOnStartupAction(this PromptBuilder promptBuilder, Func<Task> action)
-        {
-            promptBuilder.OnStartupAction = action;
-            return promptBuilder;
-        }
-
-        public static PromptBuilder SetPopulatePromptAction(this PromptBuilder promptBuilder, Func<string> action)
-        {
-            promptBuilder.PopulatePrompt = action;
-            return promptBuilder;
-        }
-
-        public static PromptBuilder SetKeyHandler(this PromptBuilder promptBuilder, Action<ConsoleKeyInfo> action)
-        {
-            promptBuilder.KeyHandler = action;
-            return promptBuilder;
-        }
-
-        public static PromptBuilder SetQuitKeyInfo(this PromptBuilder promptBuilder, ConsoleKey consoleKey)
-        {
-            promptBuilder.QuitKey = consoleKey;
-            return promptBuilder;
-        }
-
-        public static PromptBuilder SetLineHandler(this PromptBuilder promptBuilder, Action<string> action)
-        {
-            promptBuilder.LineHandler = action;
-            return promptBuilder;
-        }
-
-        public static PromptBuilder SetQuitLine(this PromptBuilder promptBuilder, string quitLine)
-        {
-            promptBuilder.QuitLine = quitLine;
-            return promptBuilder;
-        }
-
-        public static void Run(this PromptBuilder promptBuilder)
+        public static async Task Run(this PromptBuilder promptBuilder)
         {
             _promptBuilder = promptBuilder ?? throw new ArgumentException();
-            UpdatePrompt();
-            _promptBuilder.OnStartupAction?.Invoke().Wait();
+            await UpdatePrompt();
+            if (_promptBuilder.OnStartupAction != null)
+            {
+                await _promptBuilder.OnStartupAction.Invoke();
+            }
             if (_promptBuilder.KeyHandler != null)
             {
                 while (true)
@@ -91,12 +48,12 @@ namespace Useful.Prompt
                     }
                     else
                     {
-                        _promptBuilder.KeyHandler.Invoke(key);
+                        await _promptBuilder.KeyHandler.Invoke(key);
                     }
-                    UpdatePrompt();
+                    await UpdatePrompt();
                 }
             }
-            else
+            else if (_promptBuilder.LineHandler != null)
             {
                 while (true)
                 {
@@ -107,16 +64,20 @@ namespace Useful.Prompt
                     }
                     else
                     {
-                        _promptBuilder.LineHandler.Invoke(line);
+                        await _promptBuilder.LineHandler.Invoke(line);
                     }
-                    UpdatePrompt();
+                    await UpdatePrompt();
                 }
+            }
+            else
+            {
+                throw new ArgumentException("No line handler or key handler supplied.");
             }
         }
 
-        public static void UpdatePrompt() => UpdatePrompt(false);
+        public static async Task UpdatePrompt() => await UpdatePrompt(false);
 
-        private static void UpdatePrompt(bool isLocked)
+        private static async Task UpdatePrompt(bool isLocked)
         {
             if (!isLocked)
             {
@@ -124,7 +85,7 @@ namespace Useful.Prompt
             }
 
             ResetPromptPosition();
-            var prompt = _promptBuilder.PopulatePrompt.Invoke();
+            var prompt = await _promptBuilder.PopulatePrompt.Invoke();
             var paddedPrompt = prompt.PadRight(_lastPromptLength);
             var backPad = _lastPromptLength - prompt.Length < 0 ? 0 : paddedPrompt.Length + (_lastPromptLength - prompt.Length);
             Colorful.Console.WriteStyled(paddedPrompt.PadRight(backPad, '\b'), _promptBuilder.StyleSheet);
@@ -140,7 +101,7 @@ namespace Useful.Prompt
             ResetPromptPosition();
             Colorful.Console.WriteLineStyled(string.Format(input, arg).PadRight(_lastPromptLength), _promptBuilder.StyleSheet);
             _lastPromptLength = 0;
-            UpdatePrompt(true);
+            UpdatePrompt(true).Wait();
         }
 
         public static void WriteAtPosition(string input, int left, int fromTop)

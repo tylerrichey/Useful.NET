@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Useful.Tests
 {
     [TestClass]
-    public partial class Csv
+    public partial class CsvTests
     {
         List<TestClass> basicData = new List<TestClass>
         {
