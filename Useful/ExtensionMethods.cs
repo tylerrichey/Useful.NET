@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace Useful.ExtensionMethods
 {
@@ -167,11 +168,11 @@ namespace Useful.ExtensionMethods
             return string.Format("{0:0.##} {1}", dblSByte, Suffix[i]);
         }
 
-        public static string ResolveIpToHostname(this string ip)
+        public static async Task<string> ResolveIpToHostname(this string ip)
         {
             try
             {
-                return Dns.GetHostEntry(ip).HostName;
+                return (await Dns.GetHostEntryAsync(ip)).HostName;
             }
             catch
             {

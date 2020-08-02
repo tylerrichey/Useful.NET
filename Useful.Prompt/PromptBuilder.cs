@@ -13,5 +13,8 @@ namespace Useful.Prompt
         public Func<string, Task> LineHandler { get; internal set; }
         public ConsoleKey QuitKey { get; internal set; }
         public string QuitLine { get; internal set; }
+        public bool UseLineHandler { get; internal set; }
+        public bool UseKeyHandler { get; internal set; }
+        public bool UseOnStartupAction { get; internal set; }
     }
 }

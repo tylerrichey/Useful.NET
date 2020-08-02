@@ -5,33 +5,26 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
+using System.Threading.Tasks;
 using Useful.ExtensionMethods;
 
 namespace Useful.Json
 {
     public static class ExtensionMethods
     {
-        private static JsonSerializerSettings _jsonSerializerSettings;
-        public static JsonSerializerSettings JsonSerializerSettings
+        public static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
         {
-            get
+            Formatting = Formatting.Indented,
+            ContractResolver = new DefaultContractResolver
             {
-                if (_jsonSerializerSettings == null)
-                {
-                    _jsonSerializerSettings = new JsonSerializerSettings
-                    {
-                        Formatting = Formatting.Indented,
-                        ContractResolver = new DefaultContractResolver
-                        {
-                            NamingStrategy = new CamelCaseNamingStrategy()
-                        },
-                        TypeNameHandling = TypeNameHandling.Objects
-                    };
-                    _jsonSerializerSettings.Converters.Add(new StringEnumConverter());
-                }
-                return _jsonSerializerSettings;
+                NamingStrategy = new CamelCaseNamingStrategy()
+            },
+            TypeNameHandling = TypeNameHandling.Objects,
+            Converters = new List<JsonConverter>(new JsonSerializerSettings().Converters)
+            {
+                new StringEnumConverter()
             }
-        }
+        };
 
         public static string SerializeObject(this object value)
         {
@@ -58,41 +51,35 @@ namespace Useful.Json
             return JsonConvert.DeserializeObject(value.GetString(), type, JsonSerializerSettings);
         }
 
-        public static IEnumerable<IEnumerable<T>> DeserializeManyGzipFiles<T>(this IEnumerable<string> files)
+        public static async IAsyncEnumerable<IEnumerable<T>> DeserializeManyGzipFiles<T>(this IEnumerable<string> files)
         {
             foreach (var f in files)
             {
-                using (var s = File.OpenRead(f))
-                using (var ms = new MemoryStream())
-                using (var gzip = new GZipStream(s, CompressionMode.Decompress))
-                {
-                    gzip.CopyTo(ms);
-                    ms.Seek(0, SeekOrigin.Begin);
-                    var sr = new StreamReader(ms);
-                    using (var json = new JsonTextReader(sr))
-                    {
-                        yield return JsonSerializer.Create(JsonSerializerSettings)
-                           .Deserialize<IEnumerable<T>>(json);
-                    }
-                }
+                using var s = File.OpenRead(f);
+                using var ms = new MemoryStream();
+                using var gzip = new GZipStream(s, CompressionMode.Decompress);
+                await gzip.CopyToAsync(ms);
+                ms.Seek(0, SeekOrigin.Begin);
+                var sr = new StreamReader(ms);
+                using var json = new JsonTextReader(sr);
+                yield return JsonSerializer.Create(JsonSerializerSettings)
+                    .Deserialize<IEnumerable<T>>(json);
             }
         }
 
-        public static void SerializeGzipToFile<T>(this IEnumerable<T> input, string fileName)
+        public static async Task SerializeGzipToFile<T>(this IEnumerable<T> input, string fileName)
         {
-            using (var stream = new MemoryStream())
-            using (var writer = new StreamWriter(stream))
-            using (var json = new JsonTextWriter(writer))
-            using (var file = File.Create(fileName))
-            using (var gzip = new GZipStream(file, CompressionLevel.Optimal))
-            {
-                JsonSerializer.Create(JsonSerializerSettings)
-                    .Serialize(json, input);
-                json.Flush();
-                stream.Seek(0, SeekOrigin.Begin);
-                stream.CopyTo(gzip);
-                gzip.Flush();
-            }
+            using var stream = new MemoryStream();
+            using var writer = new StreamWriter(stream);
+            using var json = new JsonTextWriter(writer);
+            using var file = File.Create(fileName);
+            using var gzip = new GZipStream(file, CompressionLevel.Optimal);
+            JsonSerializer.Create(JsonSerializerSettings)
+                .Serialize(json, input);
+            await json.FlushAsync();
+            stream.Seek(0, SeekOrigin.Begin);
+            await stream.CopyToAsync(gzip);
+            await gzip.FlushAsync();
         }
     }
 }

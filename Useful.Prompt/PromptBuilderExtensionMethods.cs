@@ -14,6 +14,7 @@ namespace Useful.Prompt
 
         public static PromptBuilder SetOnStartupAction(this PromptBuilder promptBuilder, Func<Task> action)
         {
+            promptBuilder.UseOnStartupAction = true;
             promptBuilder.OnStartupAction = action;
             return promptBuilder;
         }
@@ -26,6 +27,8 @@ namespace Useful.Prompt
 
         public static PromptBuilder SetKeyHandler(this PromptBuilder promptBuilder, Func<ConsoleKeyInfo, Task> action)
         {
+            promptBuilder.UseKeyHandler = true;
+            promptBuilder.UseLineHandler = false;
             promptBuilder.KeyHandler = action;
             return promptBuilder;
         }
@@ -38,6 +41,8 @@ namespace Useful.Prompt
 
         public static PromptBuilder SetLineHandler(this PromptBuilder promptBuilder, Func<string, Task> action)
         {
+            promptBuilder.UseKeyHandler = false;
+            promptBuilder.UseLineHandler = true;
             promptBuilder.LineHandler = action;
             return promptBuilder;
         }

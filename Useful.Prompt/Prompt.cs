@@ -26,13 +26,13 @@ namespace Useful.Prompt
         public static async Task Run(this PromptBuilder promptBuilder)
         {
             _lastPromptLength = 0;
-            _promptBuilder = promptBuilder ?? throw new ArgumentException();
+            _promptBuilder = promptBuilder;
             await UpdatePrompt();
-            if (_promptBuilder.OnStartupAction != null)
+            if (_promptBuilder.UseOnStartupAction)
             {
                 await _promptBuilder.OnStartupAction.Invoke();
             }
-            if (_promptBuilder.KeyHandler != null)
+            if (_promptBuilder.UseKeyHandler)
             {
                 while (true)
                 {
@@ -55,7 +55,7 @@ namespace Useful.Prompt
                     await UpdatePrompt();
                 }
             }
-            else if (_promptBuilder.LineHandler != null)
+            else if (_promptBuilder.UseLineHandler)
             {
                 while (true)
                 {
@@ -90,7 +90,7 @@ namespace Useful.Prompt
         {
             if (!isLocked)
             {
-                Lock.Wait();
+                await Lock.WaitAsync();
             }
 
             ResetPromptPosition();

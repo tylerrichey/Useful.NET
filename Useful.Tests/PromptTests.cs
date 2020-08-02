@@ -129,13 +129,13 @@ namespace Useful.Tests
             var prompt = cmd.Build();
             var outWriter = new StringWriter();
             Console.SetOut(outWriter);
-
+            
             var inStream = new MemoryStream();
             await inStream.WriteLineAsync("test");
             await inStream.WriteLineAsync("exit");
             Console.SetIn(inStream.GetReader());
             const string exceptionMessage = "test exception";
-            await prompt.SetLineHandler((l) => throw new Exception(exceptionMessage))
+            await prompt.SetLineHandler((_) => throw new Exception(exceptionMessage))
                 .Run();
             var p = await prompt.PopulatePrompt();
             Assert.AreEqual(p + "Unhandled Exception: Useful.Tests - " + exceptionMessage + "\r\n" + p + p, outWriter.CleanOutput());

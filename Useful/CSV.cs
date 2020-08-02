@@ -13,9 +13,7 @@ namespace Useful
         public bool QuoteQualified { get; internal set; }
         public string QuoteCharacter { get; internal set; }
         public Dictionary<Type, string> Filters { get; internal set; }
-
         public Dictionary<Type, IFormatProvider> FormatProviders { get; internal set; }
-
         public List<string> IgnoredProperties { get; internal set; }
 
         public static CsvConfig Default => new CsvConfig
@@ -36,6 +34,8 @@ namespace Useful
 
         internal CsvConfig()
         {
+            Seperator = string.Empty;
+            QuoteCharacter = string.Empty;
             Filters = new Dictionary<Type, string>();
             FormatProviders = new Dictionary<Type, IFormatProvider>();
             IgnoredProperties = new List<string>();
@@ -65,21 +65,18 @@ namespace Useful
         
         public static CsvConfig UseFilter(this CsvConfig config, Type type, string filter)
         {
-            config.Filters = config.Filters ?? new Dictionary<Type, string>();
             config.Filters.Add(type, filter);
             return config;
         }
 
         public static CsvConfig UseFormatProvider(this CsvConfig config, Type type, IFormatProvider formatProvider)
         {
-            config.FormatProviders = config.FormatProviders ?? new Dictionary<Type, IFormatProvider>();
             config.FormatProviders.Add(type, formatProvider);
             return config;
         }
 
         public static CsvConfig IgnoreProperty(this CsvConfig config, string propertyName)
         {
-            config.IgnoredProperties = config.IgnoredProperties ?? new List<string>();
             config.IgnoredProperties.Add(propertyName);
             return config;
         }
@@ -87,50 +84,50 @@ namespace Useful
         internal static string GetFilter<T>(this CsvConfig config, T obj)
         {
             var value = string.Empty;
-            config.Filters?.TryGetValue(obj.GetType(), out value);
+            config.Filters.TryGetValue(obj.GetType(), out value);
             return value;
         }
 
         internal static IFormatProvider GetFormatProvider<T>(this CsvConfig config, T obj)
         {
-            IFormatProvider formatProvider = null;
-            config.FormatProviders?.TryGetValue(obj.GetType(), out formatProvider);
+            config.FormatProviders.TryGetValue(obj.GetType(), out IFormatProvider formatProvider);
             return formatProvider;
         }
     }
 
     public static class CSV
     {
-        public static async Task<byte[]> ToCsv<T>(this IEnumerable<T> data, CsvConfig csvConfig = null)
+        public static async Task<byte[]> ToCsv<T>(this IEnumerable<T> data) => await data.ToCsv<T>(CsvConfig.Default);
+
+        public static async Task<byte[]> ToCsv<T>(this IEnumerable<T> data, CsvConfig csvConfig)
         {
-            using (var ms = new MemoryStream())
-            using (var writer = new StreamWriter(ms))
-            {
-                await data.ToCsv(writer, csvConfig);
-                ms.Seek(0, SeekOrigin.Begin);
-                return ms.ToArray();
-            }
+            using var ms = new MemoryStream();
+            using var writer = new StreamWriter(ms);
+            await data.ToCsv(writer, csvConfig);
+            ms.Seek(0, SeekOrigin.Begin);
+            return ms.ToArray();
         }
 
-        public static async Task ToCsv<T>(this IEnumerable<T> data, string outputFilename, CsvConfig csvConfig = null)
+        public static async Task ToCsv<T>(this IEnumerable<T> data, string outputFilename) => await data.ToCsv<T>(outputFilename, CsvConfig.Default);
+
+        public static async Task ToCsv<T>(this IEnumerable<T> data, string outputFilename, CsvConfig csvConfig)
         {
-            using (var writer = new StreamWriter(outputFilename))
-            {
-                await data.ToCsv(writer, csvConfig);
-            }
+            using var writer = new StreamWriter(outputFilename);
+            await data.ToCsv(writer, csvConfig);
         }
 
-        public static async Task ToCsv<T>(this IEnumerable<T> data, Stream stream, CsvConfig csvConfig = null)
+        public static async Task ToCsv<T>(this IEnumerable<T> data, Stream stream) => await data.ToCsv<T>(stream, CsvConfig.Default);
+
+        public static async Task ToCsv<T>(this IEnumerable<T> data, Stream stream, CsvConfig csvConfig)
         {
-            using (var writer = new StreamWriter(stream))
-            {
-                await data.ToCsv(writer, csvConfig);
-            }
+            using var writer = new StreamWriter(stream);
+            await data.ToCsv(writer, csvConfig);
         }
 
-        public static async Task ToCsv<T>(this IEnumerable<T> data, StreamWriter streamWriter, CsvConfig csvConfig = null)
+        public static async Task ToCsv<T>(this IEnumerable<T> data, StreamWriter streamWriter) => await data.ToCsv<T>(streamWriter, CsvConfig.Default);
+
+        public static async Task ToCsv<T>(this IEnumerable<T> data, StreamWriter streamWriter, CsvConfig csvConfig)
         {
-            csvConfig = csvConfig ?? CsvConfig.Default;
             var seperator = csvConfig.Seperator;
             if (string.IsNullOrEmpty(seperator))
             {
@@ -153,18 +150,12 @@ namespace Useful
                 {
                     var value = p.GetValue(record);
                     var result = string.Empty;
-                    switch (value)
+                    result = value switch
                     {
-                        case IFormattable f:
-                            result = f.ToString(csvConfig.GetFilter(f), csvConfig.GetFormatProvider(f));
-                            break;
-                        case IConvertible c:
-                            result = c.ToString(csvConfig.GetFormatProvider(c));
-                            break;
-                        default:
-                            result = value.ToString();
-                            break;
-                    }
+                        IFormattable f => f.ToString(csvConfig.GetFilter(f), csvConfig.GetFormatProvider(f)),
+                        IConvertible c => c.ToString(csvConfig.GetFormatProvider(c)),
+                        _ => value.ToString()
+                    };
                     row.Add(result.Quoted(csvConfig));
                 }
                 await streamWriter.WriteLineAsync(string.Join(seperator, row));
