@@ -6,8 +6,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Useful.Prompt;
-using WindowsInput;
-using WindowsInput.Native;
 using cmd = Useful.Prompt.Prompt;
 
 namespace Useful.Tests
@@ -26,14 +24,13 @@ namespace Useful.Tests
             Console.SetOut(standardOutput);
             var standardInput = new StreamReader(Console.OpenStandardInput());
             Console.SetIn(standardInput);
-            cmd.Reset();
         }
 
-        private StringReader InputCommand(string input)
+        private async Task<StreamReader> InputCommand(string input)
         {
-            var writer = new StringWriter();
-            writer.WriteLine(input);
-            return new StringReader(writer.ToString());
+            var inStream = new MemoryStream();
+            await inStream.WriteLineAsync(input);
+            return inStream.GetReader();
         }
 
         [TestMethod]
@@ -41,9 +38,8 @@ namespace Useful.Tests
         {
             var defaults = cmd.Build();
             var outWriter = new StringWriter();
-            var inReader = InputCommand("exit");
             Console.SetOut(outWriter);
-            Console.SetIn(inReader);
+            Console.SetIn(await InputCommand("exit"));
             await defaults.SetLineHandler(async (k) => await Task.CompletedTask)
                 .Run();
 
@@ -51,13 +47,19 @@ namespace Useful.Tests
         }
 
         [TestMethod]
+        public async Task MissingHandler()
+        {
+            var prompt = cmd.Build();
+            await Assert.ThrowsExceptionAsync<ArgumentException>(() => prompt.Run());
+        }
+
+        [TestMethod]
         public async Task OnStartup()
         {
             var prompt = cmd.Build();
             var outWriter = new StringWriter();
-            var inReader = InputCommand("exit");
             Console.SetOut(outWriter);
-            Console.SetIn(inReader);
+            Console.SetIn(await InputCommand("exit"));
             prompt.SetLineHandler(async (k) => await Task.CompletedTask);
             var didRun = false;
             await prompt.SetOnStartupAction(async () =>
@@ -75,9 +77,8 @@ namespace Useful.Tests
         {
             var prompt = cmd.Build();
             var outWriter = new StringWriter();
-            var inReader = InputCommand("exit");
             Console.SetOut(outWriter);
-            Console.SetIn(inReader);
+            Console.SetIn(await InputCommand("exit"));
             var newPrompt = "hello > ";
             await prompt.SetLineHandler(async (k) => await Task.CompletedTask)
                 .SetPopulatePromptAction(async () => await Task.FromResult(newPrompt))
@@ -96,9 +97,7 @@ namespace Useful.Tests
             var inStream = new MemoryStream();
             await inStream.WriteLineAsync("test");
             await inStream.WriteLineAsync("exit");
-            inStream.Seek(0, SeekOrigin.Begin);
-            var inReader = new StreamReader(inStream);
-            Console.SetIn(inReader);
+            Console.SetIn(inStream.GetReader());
             
             const string line = "testline";
             await prompt.SetLineHandler(async (k) =>
@@ -115,14 +114,31 @@ namespace Useful.Tests
         {
             var prompt = cmd.Build();
             var outWriter = new StringWriter();
-            var inReader = InputCommand("quit");
             Console.SetOut(outWriter);
-            Console.SetIn(inReader);
+            Console.SetIn(await InputCommand("quit"));
             await prompt.SetLineHandler(async (k) => await Task.CompletedTask)
                 .SetQuitLine("quit")
                 .Run();
 
             Assert.AreEqual(await prompt.PopulatePrompt(), outWriter.CleanOutput());
+        }
+
+        [TestMethod]
+        public async Task LineHandlerUnhandledException()
+        {
+            var prompt = cmd.Build();
+            var outWriter = new StringWriter();
+            Console.SetOut(outWriter);
+
+            var inStream = new MemoryStream();
+            await inStream.WriteLineAsync("test");
+            await inStream.WriteLineAsync("exit");
+            Console.SetIn(inStream.GetReader());
+            const string exceptionMessage = "test exception";
+            await prompt.SetLineHandler((l) => throw new Exception(exceptionMessage))
+                .Run();
+            var p = await prompt.PopulatePrompt();
+            Assert.AreEqual(p + "Unhandled Exception: Useful.Tests - " + exceptionMessage + "\r\n" + p + p, outWriter.CleanOutput());
         }
     }
 }

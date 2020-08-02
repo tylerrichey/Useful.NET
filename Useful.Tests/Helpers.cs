@@ -8,10 +8,10 @@ namespace Useful.Tests
 {
     public static class Helpers
     {
-        public static async Task WriteKeyAsync(this MemoryStream memoryStream, string key)
+        public static StreamReader GetReader(this MemoryStream memoryStream)
         {
-            await memoryStream.WriteAsync(Console.InputEncoding.GetBytes(key).AsMemory());
-            await memoryStream.FlushAsync();
+            memoryStream.Seek(0, SeekOrigin.Begin);
+            return new StreamReader(memoryStream);
         }
 
         public static async Task WriteLineAsync(this MemoryStream memoryStream, string input)

@@ -23,14 +23,9 @@ namespace Useful.Prompt
             StyleSheet = new StyleSheet(Color.Green)
         };
 
-        public static void Reset()
-        {
-            _lastPromptLength = 0;
-            _promptBuilder = null;
-        }
-
         public static async Task Run(this PromptBuilder promptBuilder)
         {
+            _lastPromptLength = 0;
             _promptBuilder = promptBuilder ?? throw new ArgumentException();
             await UpdatePrompt();
             if (_promptBuilder.OnStartupAction != null)
@@ -48,7 +43,14 @@ namespace Useful.Prompt
                     }
                     else
                     {
-                        await _promptBuilder.KeyHandler.Invoke(key);
+                        try
+                        {
+                            await _promptBuilder.KeyHandler.Invoke(key);
+                        }
+                        catch (Exception e)
+                        {
+                            WriteLine("Unhandled Exception: {0} - {1}", e.Source, e.Message);
+                        }
                     }
                     await UpdatePrompt();
                 }
@@ -64,7 +66,14 @@ namespace Useful.Prompt
                     }
                     else
                     {
-                        await _promptBuilder.LineHandler.Invoke(line);
+                        try
+                        {
+                            await _promptBuilder.LineHandler.Invoke(line);
+                        }
+                        catch (Exception e)
+                        {
+                            WriteLine("Unhandled Exception: {0} - {1}", e.Source, e.Message);
+                        }
                     }
                     await UpdatePrompt();
                 }
