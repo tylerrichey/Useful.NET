@@ -106,7 +106,7 @@ namespace Useful.Tests
                 await Task.CompletedTask;
             }).Run();
             var p = await prompt.PopulatePrompt();
-            Assert.AreEqual(p + line + "\r\n" + p + p, outWriter.CleanOutput());
+            Assert.AreEqual(p + line + "\r\n" + p + p + p, outWriter.CleanOutput());
         }
 
         [TestMethod]
@@ -138,7 +138,7 @@ namespace Useful.Tests
             await prompt.SetLineHandler((_) => throw new Exception(exceptionMessage))
                 .Run();
             var p = await prompt.PopulatePrompt();
-            Assert.AreEqual(p + "Unhandled Exception: Useful.Tests - " + exceptionMessage + "\r\n" + p + p, outWriter.CleanOutput());
+            Assert.AreEqual(p + "Unhandled Exception: Useful.Tests - " + exceptionMessage + "\r\n" + p + p + p, outWriter.CleanOutput());
         }
     }
 }

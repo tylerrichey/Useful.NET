@@ -52,5 +52,11 @@ namespace Useful.Prompt
             promptBuilder.QuitLine = quitLine;
             return promptBuilder;
         }
+
+        public static PromptBuilder SetAutoPromptUpdateIfUnlockedTimeSpan(this PromptBuilder promptBuilder, TimeSpan timeSpan)
+        {
+            promptBuilder.AutomaticUpdatePromptTimeSpan = timeSpan;
+            return promptBuilder;
+        }
     }
 }

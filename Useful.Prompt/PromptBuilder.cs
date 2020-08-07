@@ -16,5 +16,6 @@ namespace Useful.Prompt
         public bool UseLineHandler { get; internal set; }
         public bool UseKeyHandler { get; internal set; }
         public bool UseOnStartupAction { get; internal set; }
+        public TimeSpan AutomaticUpdatePromptTimeSpan { get; internal set; }
     }
 }
