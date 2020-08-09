@@ -1,12 +1,13 @@
-﻿using Colorful;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Useful.Prompt
 {
     public class PromptBuilder
     {
-        public StyleSheet StyleSheet { get; internal set; }
         public Func<Task> OnStartupAction { get; internal set; }
         public Func<Task<string>> PopulatePrompt { get; internal set; }
         public Func<ConsoleKeyInfo, Task> KeyHandler { get; internal set; }
@@ -17,5 +18,6 @@ namespace Useful.Prompt
         public bool UseKeyHandler { get; internal set; }
         public bool UseOnStartupAction { get; internal set; }
         public TimeSpan AutomaticUpdatePromptTimeSpan { get; internal set; }
+        public IConsole ConsoleWriter { get; internal set; }
     }
 }

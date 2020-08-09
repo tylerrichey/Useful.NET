@@ -1,9 +1,10 @@
-﻿using Colorful;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -22,8 +23,8 @@ namespace Useful.Prompt
             PopulatePrompt = async () => await Task.FromResult(" > "),
             QuitKey = ConsoleKey.Q,
             QuitLine = "exit",
-            StyleSheet = new StyleSheet(Color.Green),
-            AutomaticUpdatePromptTimeSpan = TimeSpan.Zero
+            AutomaticUpdatePromptTimeSpan = TimeSpan.Zero,
+            ConsoleWriter = new DefaultConsole()
         };
 
         public static async Task Run(this PromptBuilder promptBuilder)
@@ -119,11 +120,11 @@ namespace Useful.Prompt
             var prompt = await _promptBuilder.PopulatePrompt.Invoke();
             var paddedPrompt = prompt.PadRight(_lastPromptLength);
             var backPad = _lastPromptLength - prompt.Length < 0 ? 0 : paddedPrompt.Length + (_lastPromptLength - prompt.Length);
-            Colorful.Console.WriteStyled(paddedPrompt.PadRight(backPad, '\b'), _promptBuilder.StyleSheet);
+            _promptBuilder.ConsoleWriter.WriteStyled(paddedPrompt.PadRight(backPad, '\b'));
             _lastPromptLength = paddedPrompt.Length;
         }
 
-        private static void ResetPromptPosition() => Colorful.Console.Write(string.Concat(Enumerable.Range(0, _lastPromptLength).Select(i => "\b")));
+        private static void ResetPromptPosition() => _promptBuilder.ConsoleWriter.Write(string.Concat(Enumerable.Range(0, _lastPromptLength).Select(i => "\b")));
 
         public static void WriteLine(string input, params object[] arg)
         {
@@ -134,7 +135,7 @@ namespace Useful.Prompt
         public static void WriteLineUnlocked(string input, params object[] arg)
         {
             ResetPromptPosition();
-            Colorful.Console.WriteLineStyled(string.Format(input, arg).PadRight(_lastPromptLength), _promptBuilder.StyleSheet);
+            _promptBuilder.ConsoleWriter.WriteLineStyled(string.Format(input, arg).PadRight(_lastPromptLength));
             _lastPromptLength = 0;
             UpdatePromptUnlocked().Wait();
         }
@@ -166,7 +167,7 @@ namespace Useful.Prompt
         public static void WriteAtPositionUnlockedNoReset(string input, int left, int fromTop)
         {
             System.Console.SetCursorPosition(left, System.Console.CursorTop - fromTop);
-            Colorful.Console.WriteStyled(input, _promptBuilder.StyleSheet);
+            _promptBuilder.ConsoleWriter.WriteStyled(input);
         }
 
         public static async Task ResetPositionUnlocked()

@@ -1,14 +1,16 @@
-﻿using Colorful;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Useful.Prompt
 {
     public static class PromptBuilderExtensionMethods
     {
-        public static PromptBuilder SetStyleSheet(this PromptBuilder promptBuilder, StyleSheet styleSheet)
+        public static PromptBuilder SetConsoleWriter(this PromptBuilder promptBuilder, IConsole console)
         {
-            promptBuilder.StyleSheet = styleSheet;
+            promptBuilder.ConsoleWriter = console;
             return promptBuilder;
         }
 
