@@ -10,14 +10,8 @@ namespace Useful.Prompt
 
         public void WriteLine(string input) => Console.WriteLine(input);
 
-        public void WriteLineStyled(string input)
-        {
-            throw new NotImplementedException();
-        }
+        public void WriteLineStyled(string input) => Console.WriteLine(input);
 
-        public void WriteStyled(string input)
-        {
-            throw new NotImplementedException();
-        }
+        public void WriteStyled(string input) => Console.Write(input);
     }
 }
