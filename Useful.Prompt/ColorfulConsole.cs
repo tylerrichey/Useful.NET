@@ -8,25 +8,11 @@ namespace Useful.Prompt
 {
     public class ColorfulConsole : IConsole
     {
-        private Colorful.StyleSheet _styleSheet = new Colorful.StyleSheet(Color.Green);
+        private Colorful.StyleSheet _styleSheet = new Colorful.StyleSheet(Color.AliceBlue);
 
         public ColorfulConsole() { }
-        public ColorfulConsole(Color defaultColor, Dictionary<Regex, Color> regexColors)
+        public ColorfulConsole(Dictionary<Regex, Color> regexColors)
         {
-            _styleSheet = new Colorful.StyleSheet(defaultColor);
-            if (!Colorful.VirtualTerminalConsole.EnableVirtualTerminalProcessing())
-            {
-                throw new ApplicationException();
-            }
-            foreach (var i in regexColors)
-            {
-                _styleSheet.AddStyle(i.Key.ToString(), i.Value);
-            }
-        }
-
-        public void Update(Color defaultColor, Dictionary<Regex, Color> regexColors)
-        {
-            _styleSheet = new Colorful.StyleSheet(defaultColor);
             foreach (var i in regexColors)
             {
                 _styleSheet.AddStyle(i.Key.ToString(), i.Value);

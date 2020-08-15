@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Useful.Prompt\Useful.Prompt.csproj" />
-    <ProjectReference Include="..\Useful.Tiles\Useful.Tiles.csproj" />
     <ProjectReference Include="..\Useful\Useful.csproj" />
   </ItemGroup>
 
