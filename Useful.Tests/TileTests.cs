@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using Useful.Tiles;
+using Useful.Extension;
 
 namespace Useful.Tests
 {
@@ -14,9 +16,23 @@ namespace Useful.Tests
     {
         public void Nothing() { }
 
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            var standardOutput = new StreamWriter(Console.OpenStandardOutput())
+            {
+                AutoFlush = true
+            };
+            Console.SetOut(standardOutput);
+            var standardInput = new StreamReader(Console.OpenStandardInput());
+            Console.SetIn(standardInput);
+        }
+
         [TestMethod]
         public void AddTile()
         {
+            Console.SetIn(new StringReader(""));
+            Console.SetOut(new StringWriter());
             var tileManager = TileManager.EmptyConfig()
                 .Build();
             var itemsToAdd = 4;
@@ -26,8 +42,9 @@ namespace Useful.Tests
                 {
                     tileManager.Add(ActionTile.FromAction((l, h) => Nothing()));
                 });
-            Assert.AreEqual(2, tileManager.Tiles.Count, "Expected rows incorrect");
-            Assert.AreEqual(itemsToAdd, tileManager.Tiles.CountValues(), "Expected items incorrect");
+            var tiles = tileManager.GetTiles();
+            Assert.AreEqual(2, tiles.Count, "Expected rows incorrect");
+            Assert.AreEqual(itemsToAdd, tiles.CountValues(), "Expected items incorrect");
         }
     }
 }

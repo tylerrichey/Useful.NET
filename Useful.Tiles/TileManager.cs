@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using Useful.Extension;
+using System.IO;
 
 namespace Useful.Tiles
 {
@@ -12,10 +14,14 @@ namespace Useful.Tiles
     {
         private const int _defaultTileHeight = 5;
         private const int _defaultTileWidth = 40;
+        private const char uRowChar = '\u254c';
+        private const char uColChar = '\u250a';
+        private const char uCorChar = '\u256a';
 
         private Mutex _mutex = new Mutex();
         private int _nextColumn = 1;
         private Guid _currentRowId = Guid.Empty;
+        private ConcurrentDictionary<Guid, List<Tile>> _tiles = new ConcurrentDictionary<Guid, List<Tile>>();
 
         public static TileManagerConfig Config() => new TileManagerConfig
         {
@@ -37,10 +43,38 @@ namespace Useful.Tiles
 
         public TileManagerConfig TileManagerConfig { get; private set; }
 
-        public ConcurrentDictionary<Guid, List<Tile>> Tiles = new ConcurrentDictionary<Guid, List<Tile>>();
-
         private TileManager() { }
         internal TileManager(TileManagerConfig tileManagerConfig) => TileManagerConfig = tileManagerConfig;
+
+        public Dictionary<Guid, List<Tile>> GetTiles()
+        {
+            _mutex.WaitOne();
+            var snapshot = new Dictionary<Guid, List<Tile>>(_tiles);
+            _mutex.ReleaseMutex();
+            return snapshot;
+        }
+
+        private void ClearWindowLines(int numLines)
+        {
+            Enumerable
+                .Range(0, numLines - 1)
+                .ToList()
+                .ForEach(i => Console.WriteLine(GetColumnString()));
+            Console.WriteLine(GetRoWithCornersString());
+        }
+
+        private string GetRoWithCornersString() => GetColumnString().PadRight(System.Console.BufferWidth)
+                .Replace(' ', uRowChar)
+                .Replace(uColChar, uCorChar);
+
+        private string GetColumnString()
+        {
+            var columnString = string.Empty;
+            Enumerable.Range(1, TileManagerConfig.ColumnCount - 1)
+                .ToList()
+                .ForEach(i => columnString += "".PadLeft(TileManagerConfig.TileWidth - 1) + uColChar);
+            return columnString.PadRight(System.Console.BufferWidth);
+        }
 
         public void Add(Tile tile)
         {
@@ -48,11 +82,22 @@ namespace Useful.Tiles
 
             _currentRowId = _nextColumn > 1 ? _currentRowId : Guid.NewGuid();
             tile.Height = tile.Height > 0 ? tile.Height : _defaultTileHeight;
+            if (_nextColumn == 1)
+            {
+                ClearWindowLines(tile.Height);
+            }
 
-            Tiles.AddOrUpdate(_currentRowId, new List<Tile> { tile }, (k, v) => v.AddAndReturn(tile));
+            _tiles.AddOrUpdate(_currentRowId, new List<Tile> { tile }, (k, v) => v.AddAndReturn(tile));
 
             var leftPosition = _nextColumn == 1 ? 0 : _nextColumn * TileManagerConfig.TileWidth;
-            Console.SetCursorPosition(leftPosition, Console.CursorTop);
+            try
+            {
+                Console.SetCursorPosition(leftPosition, Console.CursorTop);
+            }
+            catch (IOException)
+            {
+                //will throw during test runs
+            }
 
             switch (tile)
             {
@@ -63,8 +108,13 @@ namespace Useful.Tiles
                     Console.Write(formattedStringTile.String);
                     break;
                 case StringTile stringTile:
-                    Console.Write(stringTile.String.BreakIntoLinesByLength(TileManagerConfig.TileWidth, TileManagerConfig.TileHeight));
+                    foreach (var line in stringTile.String.BreakIntoLinesByLength(TileManagerConfig.TileWidth, TileManagerConfig.TileHeight))
+                    {
+                        Console.Write(line + '\n');
+                    }
                     break;
+                default:
+                    throw new ApplicationException("Unknown tile type.");
             }
 
             _nextColumn = (_nextColumn + 1 > TileManagerConfig.ColumnCount) ? 1 : _nextColumn + 1;
@@ -72,11 +122,11 @@ namespace Useful.Tiles
             _mutex.ReleaseMutex();
         }
 
-        private Dictionary<Guid, List<Tile>> VisibleTiles()
+        public Dictionary<Guid, List<Tile>> GetVisibleTiles()
         {
             var result = new Dictionary<Guid, List<Tile>>();
             var count = 0;
-            foreach (var i in Tiles.Reverse())
+            foreach (var i in GetTiles().Reverse())
             {
                 var height = i.Value.Max(t => t.Height);
                 if (count + height > TileManagerConfig.MaxWindowHeight)

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Threading.Tasks;
-using Useful.ExtensionMethods;
+using Useful.Extension;
 
 namespace Useful.Json
 {

@@ -8,9 +8,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Useful.ExtensionMethods
+namespace Useful.Extension
 {
-    public static class ExtensionMethods
+    public static class Methods
     {
         //using System.ComponentModel.DataAnnotations;
         //public static bool IsValid(this object input) => Validator.TryValidateObject(input, new ValidationContext(input), new List<ValidationResult>(), true);
@@ -197,6 +197,47 @@ namespace Useful.ExtensionMethods
         public static double BytesToBitsPs(this long bytes, TimeSpan ts)
         {
             return bytes * 8 / ts.TotalSeconds;
+        }
+
+        public static IEnumerable<string> BreakIntoLinesByLength(this string input, int length, int maxLines = int.MaxValue)
+        {
+            var pieces = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var currentLine = string.Empty;
+            var lineCount = 0;
+            foreach (var p in pieces)
+            {
+                if (currentLine.Length + p.Length + 1 > length)
+                {
+                    yield return currentLine.Trim();
+                    lineCount++;
+                    if (lineCount >= maxLines)
+                    {
+                        break;
+                    }
+                    currentLine = string.Empty;
+                }
+                currentLine += p + " ";
+            }
+            if (lineCount <= maxLines)
+            {
+                yield return currentLine;
+            }
+        }
+
+        public static List<T> AddAndReturn<T>(this List<T> list, T item)
+        {
+            list.Add(item);
+            return list;
+        }
+
+        public static int CountValues<TKey, TValue>(this IDictionary<TKey, List<TValue>> keyValuePairs)
+        {
+            var count = 0;
+            foreach (var k in keyValuePairs)
+            {
+                count += k.Value.Count;
+            }
+            return count;
         }
     }
 }
