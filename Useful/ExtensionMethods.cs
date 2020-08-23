@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Useful.ExtensionMethods
+namespace Useful.Extension
 {
     public static class ExtensionMethods
     {
