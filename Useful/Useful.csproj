@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Useful.NET</PackageId>
+    <Authors>tylerrichey</Authors>
+    <Company />
+    <Product />
+    <Description>A collection of useful extension methods, and other fun stuff.</Description>
+    <PackageProjectUrl>https://github.com/tylerrichey/Useful.NET</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

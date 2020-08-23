@@ -2,10 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>tylerrichey</Authors>
+    <Company>tylerrichey</Company>
+    <Description>A library to help build a long-running interactive console application.</Description>
+    <PackageProjectUrl>https://github.com/tylerrichey/Useful.NET</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Colorful.Console" Version="1.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Useful\Useful.csproj" />
   </ItemGroup>
 
 </Project>
