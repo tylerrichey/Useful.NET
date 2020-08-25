@@ -6,6 +6,9 @@ using System.Text.RegularExpressions;
 
 namespace Useful.Prompt
 {
+    /// <summary>
+    /// A basic interface wrapper for the existing System.Console write functions.
+    /// </summary>
     public interface IConsole
     {
         public void Write(string input);

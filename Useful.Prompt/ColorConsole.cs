@@ -25,43 +25,43 @@ namespace Useful.Prompt
 
         public void WriteStyled(string input)
         {
-            Console.Write(input);
-            return;
-            var arr = input.Split(' ');
-            for (var i = 0; i < arr.Length; i++)
-            {
-                var w = arr[i];
-                if (string.IsNullOrWhiteSpace(w))
-                {
-                    Console.Write(w);
-                    continue;
-                }
-                try
-                {
-                    //if (w[0] == '@')
-                    //{
-                    //    Console.ForegroundColor = ConsoleColor.Green;
-                    //}
-                    //else if (w[0] == '#')
-                    //{
-                    //    Console.ForegroundColor = ConsoleColor.Red;
-                    //}
-                    //else if (w.Contains("://"))
-                    //{
-                    //    Console.ForegroundColor = ConsoleColor.Cyan;
-                    //}
-                }
-                catch (Exception e)
-                {
-                    //
-                }
-                finally
-                {
-                    var space = i == input.Length - 1 ? "" : " ";
-                    Console.Write(w + space);
-                    //Console.ForegroundColor = _defaultColor;
-                }
-            }
+            throw new NotImplementedException();
+
+            //var arr = input.Split(' ');
+            //for (var i = 0; i < arr.Length; i++)
+            //{
+            //    var w = arr[i];
+            //    if (string.IsNullOrWhiteSpace(w))
+            //    {
+            //        Console.Write(w);
+            //        continue;
+            //    }
+            //    try
+            //    {
+            //        //if (w[0] == '@')
+            //        //{
+            //        //    Console.ForegroundColor = ConsoleColor.Green;
+            //        //}
+            //        //else if (w[0] == '#')
+            //        //{
+            //        //    Console.ForegroundColor = ConsoleColor.Red;
+            //        //}
+            //        //else if (w.Contains("://"))
+            //        //{
+            //        //    Console.ForegroundColor = ConsoleColor.Cyan;
+            //        //}
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        throw e;
+            //    }
+            //    finally
+            //    {
+            //        var space = i == input.Length - 1 ? "" : " ";
+            //        Console.Write(w + space);
+            //        //Console.ForegroundColor = _defaultColor;
+            //    }
+            //}
         }
     }
 }

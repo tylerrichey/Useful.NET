@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Useful.Prompt
 {
+    /// <summary>
+    /// The default console is simply a wrapper around System.Console.
+    /// </summary>
     public class DefaultConsole : IConsole
     {
         public void Write(string input) => Console.Write(input);

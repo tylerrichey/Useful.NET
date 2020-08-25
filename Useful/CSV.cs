@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Useful
 {
+    /// <summary>
+    /// Configuration object for CSV transformations
+    /// </summary>
     public class CsvConfig
     {
         public bool Header { get; internal set; }
@@ -16,6 +19,9 @@ namespace Useful
         public Dictionary<Type, IFormatProvider> FormatProviders { get; internal set; }
         public List<string> IgnoredProperties { get; internal set; }
 
+        /// <summary>
+        /// Default settings for CSV transformations
+        /// </summary>
         public static CsvConfig Default => new CsvConfig
         {
             Header = true,
@@ -42,39 +48,81 @@ namespace Useful
         }
     }
 
+    /// <summary>
+    /// Configuration building extension methods for fluent CSV transformations
+    /// </summary>
     public static class CsvConfigBuilder
     {
+        /// <summary>
+        /// Whether or not to include a header
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="useHeader">default = true</param>
+        /// <returns></returns>
         public static CsvConfig UseHeader(this CsvConfig config, bool useHeader = true)
         {
             config.Header = useHeader;
             return config;
         }
 
+        /// <summary>
+        /// Define the character or string to use a column seperator
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="seperator">default = ,</param>
+        /// <returns></returns>
         public static CsvConfig UseSeperator(this CsvConfig config, string seperator)
         {
             config.Seperator = seperator;
             return config;
         }
 
+        /// <summary>
+        /// Determine whether or not to quote qualify columns, and also define the quote qualification character/string
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="quoteQualify">default = true</param>
+        /// <param name="quoteCharacter">default = "</param>
+        /// <returns></returns>
         public static CsvConfig UseQuoteQualification(this CsvConfig config, bool quoteQualify = true, string quoteCharacter = "\"")
         {
             config.QuoteQualified = quoteQualify;
             config.QuoteCharacter = quoteCharacter;
             return config;
         }
-        
-        public static CsvConfig UseFilter(this CsvConfig config, Type type, string filter)
+
+        /// <summary>
+        /// Set a filter for a type that implements IFormattable
+        /// </summary>
+        /// <typeparam name="T">A type that implements IFormattable</typeparam>
+        /// <param name="config"></param>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public static CsvConfig UseFilter<T>(this CsvConfig config, string filter) where T : IConvertible
         {
-            config.Filters.Add(type, filter);
+            config.Filters.Add(typeof(T), filter);
             return config;
         }
 
-        public static CsvConfig UseFormatProvider(this CsvConfig config, Type type, IFormatProvider formatProvider)
+        /// <summary>
+        /// Set a format provider for a type that implements IFormattable
+        /// </summary>
+        /// <typeparam name="T">A type that implements IFormattable</typeparam>
+        /// <param name="config"></param>
+        /// <param name="formatProvider"></param>
+        /// <returns></returns>
+        public static CsvConfig UseFormatProvider<T>(this CsvConfig config, IFormatProvider formatProvider) where T : IFormattable
         {
-            config.FormatProviders.Add(type, formatProvider);
+            config.FormatProviders.Add(typeof(T), formatProvider);
             return config;
         }
 
+        /// <summary>
+        /// Add a case-sensitive property name to exclude from the resulting CSV
+        /// </summary>
+        /// <param name="config"></param>
+        /// <param name="propertyName"></param>
+        /// <returns></returns>
         public static CsvConfig IgnoreProperty(this CsvConfig config, string propertyName)
         {
             config.IgnoredProperties.Add(propertyName);
@@ -95,10 +143,26 @@ namespace Useful
         }
     }
 
+    /// <summary>
+    /// Static class to hold various extension methods for CSV transformations
+    /// </summary>
     public static class CSV
     {
+        /// <summary>
+        /// Transform an IEnumerable to a byte array CSV using the default settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public static async Task<byte[]> ToCsv<T>(this IEnumerable<T> data) => await data.ToCsv<T>(CsvConfig.Default);
 
+        /// <summary>
+        /// Transform an IEnumerable to a byte array CSV using custom settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="csvConfig"></param>
+        /// <returns></returns>
         public static async Task<byte[]> ToCsv<T>(this IEnumerable<T> data, CsvConfig csvConfig)
         {
             using var ms = new MemoryStream();
@@ -108,24 +172,69 @@ namespace Useful
             return ms.ToArray();
         }
 
+        /// <summary>
+        /// Transform an IEnumerable to CSV and write it to a file using the default settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="outputFilename"></param>
+        /// <returns></returns>
         public static async Task ToCsv<T>(this IEnumerable<T> data, string outputFilename) => await data.ToCsv<T>(outputFilename, CsvConfig.Default);
 
+        /// <summary>
+        /// Transform an IEnumerable to CSV and write it to a file using custom settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="outputFilename"></param>
+        /// <param name="csvConfig"></param>
+        /// <returns></returns>
         public static async Task ToCsv<T>(this IEnumerable<T> data, string outputFilename, CsvConfig csvConfig)
         {
             using var writer = new StreamWriter(outputFilename);
             await data.ToCsv(writer, csvConfig);
         }
 
+        /// <summary>
+        /// Transform an IEnumerable to a CSV and write it to a Stream using the default settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="stream"></param>
+        /// <returns></returns>
         public static async Task ToCsv<T>(this IEnumerable<T> data, Stream stream) => await data.ToCsv<T>(stream, CsvConfig.Default);
 
+        /// <summary>
+        /// Transform an IEnumerable to a CSV and write it to a Stream using custom settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="stream"></param>
+        /// <param name="csvConfig"></param>
+        /// <returns></returns>
         public static async Task ToCsv<T>(this IEnumerable<T> data, Stream stream, CsvConfig csvConfig)
         {
             using var writer = new StreamWriter(stream);
             await data.ToCsv(writer, csvConfig);
         }
 
+        /// <summary>
+        /// Transform an IEnumerable to a CSV and write it to a StreamWriter using the default settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="streamWriter"></param>
+        /// <returns></returns>
         public static async Task ToCsv<T>(this IEnumerable<T> data, StreamWriter streamWriter) => await data.ToCsv<T>(streamWriter, CsvConfig.Default);
 
+        /// <summary>
+        /// Transform an IEnumerable to a CSV and write it to a StreamWriter using custom settings.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="streamWriter"></param>
+        /// <param name="csvConfig"></param>
+        /// <returns></returns>
         public static async Task ToCsv<T>(this IEnumerable<T> data, StreamWriter streamWriter, CsvConfig csvConfig)
         {
             var seperator = csvConfig.Seperator;
@@ -149,8 +258,7 @@ namespace Useful
                 foreach (var p in props)
                 {
                     var value = p.GetValue(record);
-                    var result = string.Empty;
-                    result = value switch
+                    var result = value switch
                     {
                         IFormattable f => f.ToString(csvConfig.GetFilter(f), csvConfig.GetFormatProvider(f)),
                         IConvertible c => c.ToString(csvConfig.GetFormatProvider(c)),

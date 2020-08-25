@@ -46,7 +46,7 @@ namespace Useful.Tests
         public async Task WriteCsvFormatProvider()
         {
             var config = CsvConfig.Default
-                .UseFormatProvider(typeof(DateTime), new CultureInfo("fr-FR"));
+                .UseFormatProvider<DateTime>(new CultureInfo("fr-FR"));
             config.Filters.Clear();
             var result = await basicData.ToCsv(config);
             Assert.AreEqual(basicTruth("02/11/1987 04:20:00"), Encoding.ASCII.GetString(result));
@@ -93,8 +93,8 @@ namespace Useful.Tests
                 .UseQuoteQualification(false)
                 .UseSeperator("|")
                 .IgnoreProperty("TestBool")
-                .UseFilter(typeof(DateTime), "MM/dd/yyyy")
-                .UseFilter(typeof(int), "P");
+                .UseFilter<DateTime>("MM/dd/yyyy")
+                .UseFilter<int>("P");
             var result = await data.ToCsv(config);
             var truth = new StringBuilder(2);
             truth.AppendLine("test1|11/02/1987|100.00%");

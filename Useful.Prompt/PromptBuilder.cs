@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Useful.Prompt
 {
+    /// <summary>
+    /// This object is used to hold the configuration for the Prompt
+    /// </summary>
     public class PromptBuilder
     {
         public Func<Task> OnStartupAction { get; internal set; }

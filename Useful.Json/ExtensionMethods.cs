@@ -51,6 +51,12 @@ namespace Useful.Json
             return JsonConvert.DeserializeObject(value.GetString(), type, JsonSerializerSettings);
         }
 
+        /// <summary>
+        /// Decompress, read and deserialize the JSON to specified type for a list of filenames. Used in conjunction with SerializeGzipToFile()
+        /// </summary>
+        /// <typeparam name="T">The type to deserialize</typeparam>
+        /// <param name="files">An IEnumerable of filenames</param>
+        /// <returns></returns>
         public static async IAsyncEnumerable<IEnumerable<T>> DeserializeManyGzipFiles<T>(this IEnumerable<string> files)
         {
             foreach (var f in files)
@@ -67,6 +73,13 @@ namespace Useful.Json
             }
         }
 
+        /// <summary>
+        /// Gzip and serialize an IEnumerable to a file
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="input"></param>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
         public static async Task SerializeGzipToFile<T>(this IEnumerable<T> input, string fileName)
         {
             using var stream = new MemoryStream();
