@@ -1,0 +1,356 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/useful-net-c664g/Useful.Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.CSV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.CSV.html",
+          "hash": "at+v4wA55kuIyuRmelTaHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.CsvConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.CsvConfig.html",
+          "hash": "HxoMg2UPVcJRd4awq7rWxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.CsvConfigBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.CsvConfigBuilder.html",
+          "hash": "ZiGfzkSdCV6WLtc/uo4hUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Directories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Directories.html",
+          "hash": "zxZYHPlMnUMsHO6Ekkib5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Extension.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Extension.ExtensionMethods.html",
+          "hash": "E+ql0/vZspXIiJSGseXHlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Extension.html",
+          "hash": "KDPTMbKr7QQKQZanGeSfmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Json.ExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Json.ExtensionMethods.html",
+          "hash": "IkKMakq9a3StPHPWrk3peQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Json.html",
+          "hash": "HXo62lmrzSP05IkksXtHcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.ColorConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.ColorConsole.html",
+          "hash": "hZATRR306PDcXsF3g44Ypw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.ColorfulConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.ColorfulConsole.html",
+          "hash": "pnDaIJPFfO4w9CB1tNaj/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.DefaultConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.DefaultConsole.html",
+          "hash": "JABX0JFPRyYWBgrdSlTZMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.IConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.IConsole.html",
+          "hash": "OHJebIZA7kXftmm3hcxqeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.Prompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.Prompt.html",
+          "hash": "4ntu+qvgwgbp+DW7aOUK1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.PromptBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.PromptBuilder.html",
+          "hash": "WQXM5UfpFrmUwWARc7BqVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.PromptBuilderExtensionMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.PromptBuilderExtensionMethods.html",
+          "hash": "b50yc3hTIEE78zxEcqsjWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Prompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Prompt.html",
+          "hash": "d4HHLgzfk6cWx/8k/yw5xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Tests.CsvTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Tests.CsvTests.html",
+          "hash": "gHCoX/eXyDBhFKrfsklWNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Tests.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Tests.Helpers.html",
+          "hash": "jI0eCNj4N0CKeOQTDhLwNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Tests.PromptTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Tests.PromptTests.html",
+          "hash": "sGkRUQD1aMqxBwutbfDx8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.Tests.html",
+          "hash": "PwJuudbYc3hZvUbrTnxp+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Useful.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Useful.html",
+          "hash": "VkmH2vhCQycN1eYjqu6uAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html",
+          "hash": "QEXLao1shcmTZbgPXN5Eng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html",
+          "hash": "ZY76N/xOVGjAhAqqapyAQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "JhZpkbRIZBT3Nv9s7fYYNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "zzpmZpe8Q4n2CiKUh6KJCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 21,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

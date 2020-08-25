@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CsvConfigBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CsvConfigBuilder
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Useful.CsvConfigBuilder">
+  
+  
+  <h1 id="Useful_CsvConfigBuilder" data-uid="Useful.CsvConfigBuilder" class="text-break">Class CsvConfigBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Configuration building extension methods for fluent CSV transformations</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CsvConfigBuilder</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Useful.html">Useful</a></h6>
+  <h6><strong>Assembly</strong>: Useful.dll</h6>
+  <h5 id="Useful_CsvConfigBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CsvConfigBuilder : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder_IgnoreProperty_Useful_CsvConfig_System_String_.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder.IgnoreProperty(Useful.CsvConfig%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L126">View Source</a>
+  </span>
+  <a id="Useful_CsvConfigBuilder_IgnoreProperty_" data-uid="Useful.CsvConfigBuilder.IgnoreProperty*"></a>
+  <h4 id="Useful_CsvConfigBuilder_IgnoreProperty_Useful_CsvConfig_System_String_" data-uid="Useful.CsvConfigBuilder.IgnoreProperty(Useful.CsvConfig,System.String)">IgnoreProperty(CsvConfig, String)</h4>
+  <div class="markdown level1 summary"><p>Add a case-sensitive property name to exclude from the resulting CSV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CsvConfig IgnoreProperty(this CsvConfig config, string propertyName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propertyName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder_UseFilter__1_Useful_CsvConfig_System_String_.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder.UseFilter%60%601(Useful.CsvConfig%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L101">View Source</a>
+  </span>
+  <a id="Useful_CsvConfigBuilder_UseFilter_" data-uid="Useful.CsvConfigBuilder.UseFilter*"></a>
+  <h4 id="Useful_CsvConfigBuilder_UseFilter__1_Useful_CsvConfig_System_String_" data-uid="Useful.CsvConfigBuilder.UseFilter``1(Useful.CsvConfig,System.String)">UseFilter&lt;T&gt;(CsvConfig, String)</h4>
+  <div class="markdown level1 summary"><p>Set a filter for a type that implements IFormattable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CsvConfig UseFilter&lt;T&gt;(this CsvConfig config, string filter)
+    where T : IConvertible</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type that implements IFormattable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder_UseFormatProvider__1_Useful_CsvConfig_IFormatProvider_.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder.UseFormatProvider%60%601(Useful.CsvConfig%2CIFormatProvider)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L114">View Source</a>
+  </span>
+  <a id="Useful_CsvConfigBuilder_UseFormatProvider_" data-uid="Useful.CsvConfigBuilder.UseFormatProvider*"></a>
+  <h4 id="Useful_CsvConfigBuilder_UseFormatProvider__1_Useful_CsvConfig_IFormatProvider_" data-uid="Useful.CsvConfigBuilder.UseFormatProvider``1(Useful.CsvConfig,IFormatProvider)">UseFormatProvider&lt;T&gt;(CsvConfig, IFormatProvider)</h4>
+  <div class="markdown level1 summary"><p>Set a format provider for a type that implements IFormattable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CsvConfig UseFormatProvider&lt;T&gt;(this CsvConfig config, IFormatProvider formatProvider)
+    where T : IFormattable</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>A type that implements IFormattable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder_UseHeader_Useful_CsvConfig_System_Boolean_.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder.UseHeader(Useful.CsvConfig%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L62">View Source</a>
+  </span>
+  <a id="Useful_CsvConfigBuilder_UseHeader_" data-uid="Useful.CsvConfigBuilder.UseHeader*"></a>
+  <h4 id="Useful_CsvConfigBuilder_UseHeader_Useful_CsvConfig_System_Boolean_" data-uid="Useful.CsvConfigBuilder.UseHeader(Useful.CsvConfig,System.Boolean)">UseHeader(CsvConfig, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Whether or not to include a header</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CsvConfig UseHeader(this CsvConfig config, bool useHeader = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useHeader</span></td>
+        <td><p>default = true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder_UseQuoteQualification_Useful_CsvConfig_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder.UseQuoteQualification(Useful.CsvConfig%2CSystem.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L87">View Source</a>
+  </span>
+  <a id="Useful_CsvConfigBuilder_UseQuoteQualification_" data-uid="Useful.CsvConfigBuilder.UseQuoteQualification*"></a>
+  <h4 id="Useful_CsvConfigBuilder_UseQuoteQualification_Useful_CsvConfig_System_Boolean_System_String_" data-uid="Useful.CsvConfigBuilder.UseQuoteQualification(Useful.CsvConfig,System.Boolean,System.String)">UseQuoteQualification(CsvConfig, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Determine whether or not to quote qualify columns, and also define the quote qualification character/string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CsvConfig UseQuoteQualification(this CsvConfig config, bool quoteQualify = true, string quoteCharacter = &quot;\&quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">quoteQualify</span></td>
+        <td><p>default = true</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">quoteCharacter</span></td>
+        <td><p>default = &quot;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder_UseSeperator_Useful_CsvConfig_System_String_.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder.UseSeperator(Useful.CsvConfig%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L74">View Source</a>
+  </span>
+  <a id="Useful_CsvConfigBuilder_UseSeperator_" data-uid="Useful.CsvConfigBuilder.UseSeperator*"></a>
+  <h4 id="Useful_CsvConfigBuilder_UseSeperator_Useful_CsvConfig_System_String_" data-uid="Useful.CsvConfigBuilder.UseSeperator(Useful.CsvConfig,System.String)">UseSeperator(CsvConfig, String)</h4>
+  <div class="markdown level1 summary"><p>Define the character or string to use a column seperator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CsvConfig UseSeperator(this CsvConfig config, string seperator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">seperator</span></td>
+        <td><p>default = ,</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.CsvConfig.html">CsvConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_CsvConfigBuilder.md&amp;value=---%0Auid%3A%20Useful.CsvConfigBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful/CSV.cs/#L54" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

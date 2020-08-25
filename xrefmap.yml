@@ -1,0 +1,1659 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Useful
+  name: Useful
+  href: docs/Useful.html
+  commentId: N:Useful
+  fullName: Useful
+  nameWithType: Useful
+- uid: Useful.CSV
+  name: CSV
+  href: docs/Useful.CSV.html
+  commentId: T:Useful.CSV
+  fullName: Useful.CSV
+  nameWithType: CSV
+- uid: Useful.CSV.ToCsv*
+  name: ToCsv
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv_
+  commentId: Overload:Useful.CSV.ToCsv
+  isSpec: "True"
+  fullName: Useful.CSV.ToCsv
+  nameWithType: CSV.ToCsv
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0})
+  name: ToCsv<T>(IEnumerable<T>)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0})
+  name.vb: ToCsv(Of T)(IEnumerable(Of T))
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T))
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T))
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},Stream)
+  name: ToCsv<T>(IEnumerable<T>, Stream)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__Stream_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},Stream)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), Stream)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, Stream)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), Stream)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, Stream)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), Stream)
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},Stream,Useful.CsvConfig)
+  name: ToCsv<T>(IEnumerable<T>, Stream, CsvConfig)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__Stream_Useful_CsvConfig_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},Stream,Useful.CsvConfig)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), Stream, CsvConfig)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, Stream, Useful.CsvConfig)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), Stream, Useful.CsvConfig)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, Stream, CsvConfig)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), Stream, CsvConfig)
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},StreamWriter)
+  name: ToCsv<T>(IEnumerable<T>, StreamWriter)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__StreamWriter_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},StreamWriter)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), StreamWriter)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, StreamWriter)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), StreamWriter)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, StreamWriter)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), StreamWriter)
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},StreamWriter,Useful.CsvConfig)
+  name: ToCsv<T>(IEnumerable<T>, StreamWriter, CsvConfig)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__StreamWriter_Useful_CsvConfig_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},StreamWriter,Useful.CsvConfig)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), StreamWriter, CsvConfig)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, StreamWriter, Useful.CsvConfig)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), StreamWriter, Useful.CsvConfig)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, StreamWriter, CsvConfig)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), StreamWriter, CsvConfig)
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},System.String)
+  name: ToCsv<T>(IEnumerable<T>, String)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__System_String_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},System.String)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), String)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, System.String)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), System.String)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, String)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), String)
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},System.String,Useful.CsvConfig)
+  name: ToCsv<T>(IEnumerable<T>, String, CsvConfig)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__System_String_Useful_CsvConfig_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},System.String,Useful.CsvConfig)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), String, CsvConfig)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, System.String, Useful.CsvConfig)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), System.String, Useful.CsvConfig)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, String, CsvConfig)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), String, CsvConfig)
+- uid: Useful.CSV.ToCsv``1(IEnumerable{``0},Useful.CsvConfig)
+  name: ToCsv<T>(IEnumerable<T>, CsvConfig)
+  href: docs/Useful.CSV.html#Useful_CSV_ToCsv__1_IEnumerable___0__Useful_CsvConfig_
+  commentId: M:Useful.CSV.ToCsv``1(IEnumerable{``0},Useful.CsvConfig)
+  name.vb: ToCsv(Of T)(IEnumerable(Of T), CsvConfig)
+  fullName: Useful.CSV.ToCsv<T>(IEnumerable<T>, Useful.CsvConfig)
+  fullName.vb: Useful.CSV.ToCsv(Of T)(IEnumerable(Of T), Useful.CsvConfig)
+  nameWithType: CSV.ToCsv<T>(IEnumerable<T>, CsvConfig)
+  nameWithType.vb: CSV.ToCsv(Of T)(IEnumerable(Of T), CsvConfig)
+- uid: Useful.CsvConfig
+  name: CsvConfig
+  href: docs/Useful.CsvConfig.html
+  commentId: T:Useful.CsvConfig
+  fullName: Useful.CsvConfig
+  nameWithType: CsvConfig
+- uid: Useful.CsvConfig.Default
+  name: Default
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Default
+  commentId: P:Useful.CsvConfig.Default
+  fullName: Useful.CsvConfig.Default
+  nameWithType: CsvConfig.Default
+- uid: Useful.CsvConfig.Default*
+  name: Default
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Default_
+  commentId: Overload:Useful.CsvConfig.Default
+  isSpec: "True"
+  fullName: Useful.CsvConfig.Default
+  nameWithType: CsvConfig.Default
+- uid: Useful.CsvConfig.Empty
+  name: Empty
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Empty
+  commentId: P:Useful.CsvConfig.Empty
+  fullName: Useful.CsvConfig.Empty
+  nameWithType: CsvConfig.Empty
+- uid: Useful.CsvConfig.Empty*
+  name: Empty
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Empty_
+  commentId: Overload:Useful.CsvConfig.Empty
+  isSpec: "True"
+  fullName: Useful.CsvConfig.Empty
+  nameWithType: CsvConfig.Empty
+- uid: Useful.CsvConfig.Filters
+  name: Filters
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Filters
+  commentId: P:Useful.CsvConfig.Filters
+  fullName: Useful.CsvConfig.Filters
+  nameWithType: CsvConfig.Filters
+- uid: Useful.CsvConfig.Filters*
+  name: Filters
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Filters_
+  commentId: Overload:Useful.CsvConfig.Filters
+  isSpec: "True"
+  fullName: Useful.CsvConfig.Filters
+  nameWithType: CsvConfig.Filters
+- uid: Useful.CsvConfig.FormatProviders
+  name: FormatProviders
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_FormatProviders
+  commentId: P:Useful.CsvConfig.FormatProviders
+  fullName: Useful.CsvConfig.FormatProviders
+  nameWithType: CsvConfig.FormatProviders
+- uid: Useful.CsvConfig.FormatProviders*
+  name: FormatProviders
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_FormatProviders_
+  commentId: Overload:Useful.CsvConfig.FormatProviders
+  isSpec: "True"
+  fullName: Useful.CsvConfig.FormatProviders
+  nameWithType: CsvConfig.FormatProviders
+- uid: Useful.CsvConfig.Header
+  name: Header
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Header
+  commentId: P:Useful.CsvConfig.Header
+  fullName: Useful.CsvConfig.Header
+  nameWithType: CsvConfig.Header
+- uid: Useful.CsvConfig.Header*
+  name: Header
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Header_
+  commentId: Overload:Useful.CsvConfig.Header
+  isSpec: "True"
+  fullName: Useful.CsvConfig.Header
+  nameWithType: CsvConfig.Header
+- uid: Useful.CsvConfig.IgnoredProperties
+  name: IgnoredProperties
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_IgnoredProperties
+  commentId: P:Useful.CsvConfig.IgnoredProperties
+  fullName: Useful.CsvConfig.IgnoredProperties
+  nameWithType: CsvConfig.IgnoredProperties
+- uid: Useful.CsvConfig.IgnoredProperties*
+  name: IgnoredProperties
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_IgnoredProperties_
+  commentId: Overload:Useful.CsvConfig.IgnoredProperties
+  isSpec: "True"
+  fullName: Useful.CsvConfig.IgnoredProperties
+  nameWithType: CsvConfig.IgnoredProperties
+- uid: Useful.CsvConfig.QuoteCharacter
+  name: QuoteCharacter
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_QuoteCharacter
+  commentId: P:Useful.CsvConfig.QuoteCharacter
+  fullName: Useful.CsvConfig.QuoteCharacter
+  nameWithType: CsvConfig.QuoteCharacter
+- uid: Useful.CsvConfig.QuoteCharacter*
+  name: QuoteCharacter
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_QuoteCharacter_
+  commentId: Overload:Useful.CsvConfig.QuoteCharacter
+  isSpec: "True"
+  fullName: Useful.CsvConfig.QuoteCharacter
+  nameWithType: CsvConfig.QuoteCharacter
+- uid: Useful.CsvConfig.QuoteQualified
+  name: QuoteQualified
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_QuoteQualified
+  commentId: P:Useful.CsvConfig.QuoteQualified
+  fullName: Useful.CsvConfig.QuoteQualified
+  nameWithType: CsvConfig.QuoteQualified
+- uid: Useful.CsvConfig.QuoteQualified*
+  name: QuoteQualified
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_QuoteQualified_
+  commentId: Overload:Useful.CsvConfig.QuoteQualified
+  isSpec: "True"
+  fullName: Useful.CsvConfig.QuoteQualified
+  nameWithType: CsvConfig.QuoteQualified
+- uid: Useful.CsvConfig.Seperator
+  name: Seperator
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Seperator
+  commentId: P:Useful.CsvConfig.Seperator
+  fullName: Useful.CsvConfig.Seperator
+  nameWithType: CsvConfig.Seperator
+- uid: Useful.CsvConfig.Seperator*
+  name: Seperator
+  href: docs/Useful.CsvConfig.html#Useful_CsvConfig_Seperator_
+  commentId: Overload:Useful.CsvConfig.Seperator
+  isSpec: "True"
+  fullName: Useful.CsvConfig.Seperator
+  nameWithType: CsvConfig.Seperator
+- uid: Useful.CsvConfigBuilder
+  name: CsvConfigBuilder
+  href: docs/Useful.CsvConfigBuilder.html
+  commentId: T:Useful.CsvConfigBuilder
+  fullName: Useful.CsvConfigBuilder
+  nameWithType: CsvConfigBuilder
+- uid: Useful.CsvConfigBuilder.IgnoreProperty(Useful.CsvConfig,System.String)
+  name: IgnoreProperty(CsvConfig, String)
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_IgnoreProperty_Useful_CsvConfig_System_String_
+  commentId: M:Useful.CsvConfigBuilder.IgnoreProperty(Useful.CsvConfig,System.String)
+  fullName: Useful.CsvConfigBuilder.IgnoreProperty(Useful.CsvConfig, System.String)
+  nameWithType: CsvConfigBuilder.IgnoreProperty(CsvConfig, String)
+- uid: Useful.CsvConfigBuilder.IgnoreProperty*
+  name: IgnoreProperty
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_IgnoreProperty_
+  commentId: Overload:Useful.CsvConfigBuilder.IgnoreProperty
+  isSpec: "True"
+  fullName: Useful.CsvConfigBuilder.IgnoreProperty
+  nameWithType: CsvConfigBuilder.IgnoreProperty
+- uid: Useful.CsvConfigBuilder.UseFilter*
+  name: UseFilter
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseFilter_
+  commentId: Overload:Useful.CsvConfigBuilder.UseFilter
+  isSpec: "True"
+  fullName: Useful.CsvConfigBuilder.UseFilter
+  nameWithType: CsvConfigBuilder.UseFilter
+- uid: Useful.CsvConfigBuilder.UseFilter``1(Useful.CsvConfig,System.String)
+  name: UseFilter<T>(CsvConfig, String)
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseFilter__1_Useful_CsvConfig_System_String_
+  commentId: M:Useful.CsvConfigBuilder.UseFilter``1(Useful.CsvConfig,System.String)
+  name.vb: UseFilter(Of T)(CsvConfig, String)
+  fullName: Useful.CsvConfigBuilder.UseFilter<T>(Useful.CsvConfig, System.String)
+  fullName.vb: Useful.CsvConfigBuilder.UseFilter(Of T)(Useful.CsvConfig, System.String)
+  nameWithType: CsvConfigBuilder.UseFilter<T>(CsvConfig, String)
+  nameWithType.vb: CsvConfigBuilder.UseFilter(Of T)(CsvConfig, String)
+- uid: Useful.CsvConfigBuilder.UseFormatProvider*
+  name: UseFormatProvider
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseFormatProvider_
+  commentId: Overload:Useful.CsvConfigBuilder.UseFormatProvider
+  isSpec: "True"
+  fullName: Useful.CsvConfigBuilder.UseFormatProvider
+  nameWithType: CsvConfigBuilder.UseFormatProvider
+- uid: Useful.CsvConfigBuilder.UseFormatProvider``1(Useful.CsvConfig,IFormatProvider)
+  name: UseFormatProvider<T>(CsvConfig, IFormatProvider)
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseFormatProvider__1_Useful_CsvConfig_IFormatProvider_
+  commentId: M:Useful.CsvConfigBuilder.UseFormatProvider``1(Useful.CsvConfig,IFormatProvider)
+  name.vb: UseFormatProvider(Of T)(CsvConfig, IFormatProvider)
+  fullName: Useful.CsvConfigBuilder.UseFormatProvider<T>(Useful.CsvConfig, IFormatProvider)
+  fullName.vb: Useful.CsvConfigBuilder.UseFormatProvider(Of T)(Useful.CsvConfig, IFormatProvider)
+  nameWithType: CsvConfigBuilder.UseFormatProvider<T>(CsvConfig, IFormatProvider)
+  nameWithType.vb: CsvConfigBuilder.UseFormatProvider(Of T)(CsvConfig, IFormatProvider)
+- uid: Useful.CsvConfigBuilder.UseHeader(Useful.CsvConfig,System.Boolean)
+  name: UseHeader(CsvConfig, Boolean)
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseHeader_Useful_CsvConfig_System_Boolean_
+  commentId: M:Useful.CsvConfigBuilder.UseHeader(Useful.CsvConfig,System.Boolean)
+  fullName: Useful.CsvConfigBuilder.UseHeader(Useful.CsvConfig, System.Boolean)
+  nameWithType: CsvConfigBuilder.UseHeader(CsvConfig, Boolean)
+- uid: Useful.CsvConfigBuilder.UseHeader*
+  name: UseHeader
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseHeader_
+  commentId: Overload:Useful.CsvConfigBuilder.UseHeader
+  isSpec: "True"
+  fullName: Useful.CsvConfigBuilder.UseHeader
+  nameWithType: CsvConfigBuilder.UseHeader
+- uid: Useful.CsvConfigBuilder.UseQuoteQualification(Useful.CsvConfig,System.Boolean,System.String)
+  name: UseQuoteQualification(CsvConfig, Boolean, String)
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseQuoteQualification_Useful_CsvConfig_System_Boolean_System_String_
+  commentId: M:Useful.CsvConfigBuilder.UseQuoteQualification(Useful.CsvConfig,System.Boolean,System.String)
+  fullName: Useful.CsvConfigBuilder.UseQuoteQualification(Useful.CsvConfig, System.Boolean, System.String)
+  nameWithType: CsvConfigBuilder.UseQuoteQualification(CsvConfig, Boolean, String)
+- uid: Useful.CsvConfigBuilder.UseQuoteQualification*
+  name: UseQuoteQualification
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseQuoteQualification_
+  commentId: Overload:Useful.CsvConfigBuilder.UseQuoteQualification
+  isSpec: "True"
+  fullName: Useful.CsvConfigBuilder.UseQuoteQualification
+  nameWithType: CsvConfigBuilder.UseQuoteQualification
+- uid: Useful.CsvConfigBuilder.UseSeperator(Useful.CsvConfig,System.String)
+  name: UseSeperator(CsvConfig, String)
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseSeperator_Useful_CsvConfig_System_String_
+  commentId: M:Useful.CsvConfigBuilder.UseSeperator(Useful.CsvConfig,System.String)
+  fullName: Useful.CsvConfigBuilder.UseSeperator(Useful.CsvConfig, System.String)
+  nameWithType: CsvConfigBuilder.UseSeperator(CsvConfig, String)
+- uid: Useful.CsvConfigBuilder.UseSeperator*
+  name: UseSeperator
+  href: docs/Useful.CsvConfigBuilder.html#Useful_CsvConfigBuilder_UseSeperator_
+  commentId: Overload:Useful.CsvConfigBuilder.UseSeperator
+  isSpec: "True"
+  fullName: Useful.CsvConfigBuilder.UseSeperator
+  nameWithType: CsvConfigBuilder.UseSeperator
+- uid: Useful.Directories
+  name: Directories
+  href: docs/Useful.Directories.html
+  commentId: T:Useful.Directories
+  fullName: Useful.Directories
+  nameWithType: Directories
+- uid: Useful.Extension
+  name: Useful.Extension
+  href: docs/Useful.Extension.html
+  commentId: N:Useful.Extension
+  fullName: Useful.Extension
+  nameWithType: Useful.Extension
+- uid: Useful.Extension.ExtensionMethods
+  name: ExtensionMethods
+  href: docs/Useful.Extension.ExtensionMethods.html
+  commentId: T:Useful.Extension.ExtensionMethods
+  fullName: Useful.Extension.ExtensionMethods
+  nameWithType: ExtensionMethods
+- uid: Useful.Extension.ExtensionMethods.BytesToBitsPs(System.Int64,TimeSpan)
+  name: BytesToBitsPs(Int64, TimeSpan)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_BytesToBitsPs_System_Int64_TimeSpan_
+  commentId: M:Useful.Extension.ExtensionMethods.BytesToBitsPs(System.Int64,TimeSpan)
+  fullName: Useful.Extension.ExtensionMethods.BytesToBitsPs(System.Int64, TimeSpan)
+  nameWithType: ExtensionMethods.BytesToBitsPs(Int64, TimeSpan)
+- uid: Useful.Extension.ExtensionMethods.BytesToBitsPs*
+  name: BytesToBitsPs
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_BytesToBitsPs_
+  commentId: Overload:Useful.Extension.ExtensionMethods.BytesToBitsPs
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.BytesToBitsPs
+  nameWithType: ExtensionMethods.BytesToBitsPs
+- uid: Useful.Extension.ExtensionMethods.BytesToBitsPsToString(System.Int64,TimeSpan)
+  name: BytesToBitsPsToString(Int64, TimeSpan)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_BytesToBitsPsToString_System_Int64_TimeSpan_
+  commentId: M:Useful.Extension.ExtensionMethods.BytesToBitsPsToString(System.Int64,TimeSpan)
+  fullName: Useful.Extension.ExtensionMethods.BytesToBitsPsToString(System.Int64, TimeSpan)
+  nameWithType: ExtensionMethods.BytesToBitsPsToString(Int64, TimeSpan)
+- uid: Useful.Extension.ExtensionMethods.BytesToBitsPsToString*
+  name: BytesToBitsPsToString
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_BytesToBitsPsToString_
+  commentId: Overload:Useful.Extension.ExtensionMethods.BytesToBitsPsToString
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.BytesToBitsPsToString
+  nameWithType: ExtensionMethods.BytesToBitsPsToString
+- uid: Useful.Extension.ExtensionMethods.BytesToString(System.Int32)
+  name: BytesToString(Int32)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_BytesToString_System_Int32_
+  commentId: M:Useful.Extension.ExtensionMethods.BytesToString(System.Int32)
+  fullName: Useful.Extension.ExtensionMethods.BytesToString(System.Int32)
+  nameWithType: ExtensionMethods.BytesToString(Int32)
+- uid: Useful.Extension.ExtensionMethods.BytesToString*
+  name: BytesToString
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_BytesToString_
+  commentId: Overload:Useful.Extension.ExtensionMethods.BytesToString
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.BytesToString
+  nameWithType: ExtensionMethods.BytesToString
+- uid: Useful.Extension.ExtensionMethods.ContainsAny*
+  name: ContainsAny
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ContainsAny_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ContainsAny
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ContainsAny
+  nameWithType: ExtensionMethods.ContainsAny
+- uid: Useful.Extension.ExtensionMethods.ContainsAny``1(IEnumerable{``0},IEnumerable{``0})
+  name: ContainsAny<T>(IEnumerable<T>, IEnumerable<T>)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ContainsAny__1_IEnumerable___0__IEnumerable___0__
+  commentId: M:Useful.Extension.ExtensionMethods.ContainsAny``1(IEnumerable{``0},IEnumerable{``0})
+  name.vb: ContainsAny(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+  fullName: Useful.Extension.ExtensionMethods.ContainsAny<T>(IEnumerable<T>, IEnumerable<T>)
+  fullName.vb: Useful.Extension.ExtensionMethods.ContainsAny(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+  nameWithType: ExtensionMethods.ContainsAny<T>(IEnumerable<T>, IEnumerable<T>)
+  nameWithType.vb: ExtensionMethods.ContainsAny(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+- uid: Useful.Extension.ExtensionMethods.ContainsWord(System.String,System.String)
+  name: ContainsWord(String, String)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ContainsWord_System_String_System_String_
+  commentId: M:Useful.Extension.ExtensionMethods.ContainsWord(System.String,System.String)
+  fullName: Useful.Extension.ExtensionMethods.ContainsWord(System.String, System.String)
+  nameWithType: ExtensionMethods.ContainsWord(String, String)
+- uid: Useful.Extension.ExtensionMethods.ContainsWord(System.String,System.String[])
+  name: ContainsWord(String, String[])
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ContainsWord_System_String_System_String___
+  commentId: M:Useful.Extension.ExtensionMethods.ContainsWord(System.String,System.String[])
+  name.vb: ContainsWord(String, String())
+  fullName: Useful.Extension.ExtensionMethods.ContainsWord(System.String, System.String[])
+  fullName.vb: Useful.Extension.ExtensionMethods.ContainsWord(System.String, System.String())
+  nameWithType: ExtensionMethods.ContainsWord(String, String[])
+  nameWithType.vb: ExtensionMethods.ContainsWord(String, String())
+- uid: Useful.Extension.ExtensionMethods.ContainsWord*
+  name: ContainsWord
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ContainsWord_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ContainsWord
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ContainsWord
+  nameWithType: ExtensionMethods.ContainsWord
+- uid: Useful.Extension.ExtensionMethods.EmptyBagToList*
+  name: EmptyBagToList
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EmptyBagToList_
+  commentId: Overload:Useful.Extension.ExtensionMethods.EmptyBagToList
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.EmptyBagToList
+  nameWithType: ExtensionMethods.EmptyBagToList
+- uid: Useful.Extension.ExtensionMethods.EmptyBagToList``1(ConcurrentBag{``0})
+  name: EmptyBagToList<T>(ConcurrentBag<T>)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EmptyBagToList__1_ConcurrentBag___0__
+  commentId: M:Useful.Extension.ExtensionMethods.EmptyBagToList``1(ConcurrentBag{``0})
+  name.vb: EmptyBagToList(Of T)(ConcurrentBag(Of T))
+  fullName: Useful.Extension.ExtensionMethods.EmptyBagToList<T>(ConcurrentBag<T>)
+  fullName.vb: Useful.Extension.ExtensionMethods.EmptyBagToList(Of T)(ConcurrentBag(Of T))
+  nameWithType: ExtensionMethods.EmptyBagToList<T>(ConcurrentBag<T>)
+  nameWithType.vb: ExtensionMethods.EmptyBagToList(Of T)(ConcurrentBag(Of T))
+- uid: Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary*
+  name: EmptyConcurrentDictionaryToDictionary
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EmptyConcurrentDictionaryToDictionary_
+  commentId: Overload:Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary
+  nameWithType: ExtensionMethods.EmptyConcurrentDictionaryToDictionary
+- uid: Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary``2(ConcurrentDictionary{``0,``1})
+  name: EmptyConcurrentDictionaryToDictionary<TKey, TValue>(ConcurrentDictionary<TKey, TValue>)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EmptyConcurrentDictionaryToDictionary__2_ConcurrentDictionary___0___1__
+  commentId: M:Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary``2(ConcurrentDictionary{``0,``1})
+  name.vb: EmptyConcurrentDictionaryToDictionary(Of TKey, TValue)(ConcurrentDictionary(Of TKey, TValue))
+  fullName: Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary<TKey, TValue>(ConcurrentDictionary<TKey, TValue>)
+  fullName.vb: Useful.Extension.ExtensionMethods.EmptyConcurrentDictionaryToDictionary(Of TKey, TValue)(ConcurrentDictionary(Of TKey, TValue))
+  nameWithType: ExtensionMethods.EmptyConcurrentDictionaryToDictionary<TKey, TValue>(ConcurrentDictionary<TKey, TValue>)
+  nameWithType.vb: ExtensionMethods.EmptyConcurrentDictionaryToDictionary(Of TKey, TValue)(ConcurrentDictionary(Of TKey, TValue))
+- uid: Useful.Extension.ExtensionMethods.EnumerableStringToString(IEnumerable{System.String})
+  name: EnumerableStringToString(IEnumerable<String>)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EnumerableStringToString_IEnumerable_System_String__
+  commentId: M:Useful.Extension.ExtensionMethods.EnumerableStringToString(IEnumerable{System.String})
+  name.vb: EnumerableStringToString(IEnumerable(Of String))
+  fullName: Useful.Extension.ExtensionMethods.EnumerableStringToString(IEnumerable<System.String>)
+  fullName.vb: Useful.Extension.ExtensionMethods.EnumerableStringToString(IEnumerable(Of System.String))
+  nameWithType: ExtensionMethods.EnumerableStringToString(IEnumerable<String>)
+  nameWithType.vb: ExtensionMethods.EnumerableStringToString(IEnumerable(Of String))
+- uid: Useful.Extension.ExtensionMethods.EnumerableStringToString*
+  name: EnumerableStringToString
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EnumerableStringToString_
+  commentId: Overload:Useful.Extension.ExtensionMethods.EnumerableStringToString
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.EnumerableStringToString
+  nameWithType: ExtensionMethods.EnumerableStringToString
+- uid: Useful.Extension.ExtensionMethods.EqualsList*
+  name: EqualsList
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EqualsList_
+  commentId: Overload:Useful.Extension.ExtensionMethods.EqualsList
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.EqualsList
+  nameWithType: ExtensionMethods.EqualsList
+- uid: Useful.Extension.ExtensionMethods.EqualsList``1(List{``0},List{``0})
+  name: EqualsList<T>(List<T>, List<T>)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_EqualsList__1_List___0__List___0__
+  commentId: M:Useful.Extension.ExtensionMethods.EqualsList``1(List{``0},List{``0})
+  name.vb: EqualsList(Of T)(List(Of T), List(Of T))
+  fullName: Useful.Extension.ExtensionMethods.EqualsList<T>(List<T>, List<T>)
+  fullName.vb: Useful.Extension.ExtensionMethods.EqualsList(Of T)(List(Of T), List(Of T))
+  nameWithType: ExtensionMethods.EqualsList<T>(List<T>, List<T>)
+  nameWithType.vb: ExtensionMethods.EqualsList(Of T)(List(Of T), List(Of T))
+- uid: Useful.Extension.ExtensionMethods.ExceptionToConsole(Exception)
+  name: ExceptionToConsole(Exception)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ExceptionToConsole_Exception_
+  commentId: M:Useful.Extension.ExtensionMethods.ExceptionToConsole(Exception)
+  fullName: Useful.Extension.ExtensionMethods.ExceptionToConsole(Exception)
+  nameWithType: ExtensionMethods.ExceptionToConsole(Exception)
+- uid: Useful.Extension.ExtensionMethods.ExceptionToConsole*
+  name: ExceptionToConsole
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ExceptionToConsole_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ExceptionToConsole
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ExceptionToConsole
+  nameWithType: ExtensionMethods.ExceptionToConsole
+- uid: Useful.Extension.ExtensionMethods.GetString(System.Byte[])
+  name: GetString(Byte[])
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_GetString_System_Byte___
+  commentId: M:Useful.Extension.ExtensionMethods.GetString(System.Byte[])
+  name.vb: GetString(Byte())
+  fullName: Useful.Extension.ExtensionMethods.GetString(System.Byte[])
+  fullName.vb: Useful.Extension.ExtensionMethods.GetString(System.Byte())
+  nameWithType: ExtensionMethods.GetString(Byte[])
+  nameWithType.vb: ExtensionMethods.GetString(Byte())
+- uid: Useful.Extension.ExtensionMethods.GetString*
+  name: GetString
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_GetString_
+  commentId: Overload:Useful.Extension.ExtensionMethods.GetString
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.GetString
+  nameWithType: ExtensionMethods.GetString
+- uid: Useful.Extension.ExtensionMethods.GetStringArrayEnumerable(StreamReader,System.Int32)
+  name: GetStringArrayEnumerable(StreamReader, Int32)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_GetStringArrayEnumerable_StreamReader_System_Int32_
+  commentId: M:Useful.Extension.ExtensionMethods.GetStringArrayEnumerable(StreamReader,System.Int32)
+  fullName: Useful.Extension.ExtensionMethods.GetStringArrayEnumerable(StreamReader, System.Int32)
+  nameWithType: ExtensionMethods.GetStringArrayEnumerable(StreamReader, Int32)
+- uid: Useful.Extension.ExtensionMethods.GetStringArrayEnumerable*
+  name: GetStringArrayEnumerable
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_GetStringArrayEnumerable_
+  commentId: Overload:Useful.Extension.ExtensionMethods.GetStringArrayEnumerable
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.GetStringArrayEnumerable
+  nameWithType: ExtensionMethods.GetStringArrayEnumerable
+- uid: Useful.Extension.ExtensionMethods.NearestFriday(DateTime)
+  name: NearestFriday(DateTime)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_NearestFriday_DateTime_
+  commentId: M:Useful.Extension.ExtensionMethods.NearestFriday(DateTime)
+  fullName: Useful.Extension.ExtensionMethods.NearestFriday(DateTime)
+  nameWithType: ExtensionMethods.NearestFriday(DateTime)
+- uid: Useful.Extension.ExtensionMethods.NearestFriday*
+  name: NearestFriday
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_NearestFriday_
+  commentId: Overload:Useful.Extension.ExtensionMethods.NearestFriday
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.NearestFriday
+  nameWithType: ExtensionMethods.NearestFriday
+- uid: Useful.Extension.ExtensionMethods.NearestFutureDayOfWeek(DateTime,DayOfWeek)
+  name: NearestFutureDayOfWeek(DateTime, DayOfWeek)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_NearestFutureDayOfWeek_DateTime_DayOfWeek_
+  commentId: M:Useful.Extension.ExtensionMethods.NearestFutureDayOfWeek(DateTime,DayOfWeek)
+  fullName: Useful.Extension.ExtensionMethods.NearestFutureDayOfWeek(DateTime, DayOfWeek)
+  nameWithType: ExtensionMethods.NearestFutureDayOfWeek(DateTime, DayOfWeek)
+- uid: Useful.Extension.ExtensionMethods.NearestFutureDayOfWeek*
+  name: NearestFutureDayOfWeek
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_NearestFutureDayOfWeek_
+  commentId: Overload:Useful.Extension.ExtensionMethods.NearestFutureDayOfWeek
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.NearestFutureDayOfWeek
+  nameWithType: ExtensionMethods.NearestFutureDayOfWeek
+- uid: Useful.Extension.ExtensionMethods.ResolveIpToHostname(System.String)
+  name: ResolveIpToHostname(String)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ResolveIpToHostname_System_String_
+  commentId: M:Useful.Extension.ExtensionMethods.ResolveIpToHostname(System.String)
+  fullName: Useful.Extension.ExtensionMethods.ResolveIpToHostname(System.String)
+  nameWithType: ExtensionMethods.ResolveIpToHostname(String)
+- uid: Useful.Extension.ExtensionMethods.ResolveIpToHostname*
+  name: ResolveIpToHostname
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ResolveIpToHostname_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ResolveIpToHostname
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ResolveIpToHostname
+  nameWithType: ExtensionMethods.ResolveIpToHostname
+- uid: Useful.Extension.ExtensionMethods.ToBytes(System.String)
+  name: ToBytes(String)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ToBytes_System_String_
+  commentId: M:Useful.Extension.ExtensionMethods.ToBytes(System.String)
+  fullName: Useful.Extension.ExtensionMethods.ToBytes(System.String)
+  nameWithType: ExtensionMethods.ToBytes(String)
+- uid: Useful.Extension.ExtensionMethods.ToBytes*
+  name: ToBytes
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ToBytes_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ToBytes
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ToBytes
+  nameWithType: ExtensionMethods.ToBytes
+- uid: Useful.Extension.ExtensionMethods.ToCamelCase(System.String)
+  name: ToCamelCase(String)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ToCamelCase_System_String_
+  commentId: M:Useful.Extension.ExtensionMethods.ToCamelCase(System.String)
+  fullName: Useful.Extension.ExtensionMethods.ToCamelCase(System.String)
+  nameWithType: ExtensionMethods.ToCamelCase(String)
+- uid: Useful.Extension.ExtensionMethods.ToCamelCase*
+  name: ToCamelCase
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ToCamelCase_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ToCamelCase
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ToCamelCase
+  nameWithType: ExtensionMethods.ToCamelCase
+- uid: Useful.Extension.ExtensionMethods.ToShortHandString(TimeSpan)
+  name: ToShortHandString(TimeSpan)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ToShortHandString_TimeSpan_
+  commentId: M:Useful.Extension.ExtensionMethods.ToShortHandString(TimeSpan)
+  fullName: Useful.Extension.ExtensionMethods.ToShortHandString(TimeSpan)
+  nameWithType: ExtensionMethods.ToShortHandString(TimeSpan)
+- uid: Useful.Extension.ExtensionMethods.ToShortHandString*
+  name: ToShortHandString
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_ToShortHandString_
+  commentId: Overload:Useful.Extension.ExtensionMethods.ToShortHandString
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.ToShortHandString
+  nameWithType: ExtensionMethods.ToShortHandString
+- uid: Useful.Extension.ExtensionMethods.WholeChunks(System.String,System.Int32)
+  name: WholeChunks(String, Int32)
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_WholeChunks_System_String_System_Int32_
+  commentId: M:Useful.Extension.ExtensionMethods.WholeChunks(System.String,System.Int32)
+  fullName: Useful.Extension.ExtensionMethods.WholeChunks(System.String, System.Int32)
+  nameWithType: ExtensionMethods.WholeChunks(String, Int32)
+- uid: Useful.Extension.ExtensionMethods.WholeChunks*
+  name: WholeChunks
+  href: docs/Useful.Extension.ExtensionMethods.html#Useful_Extension_ExtensionMethods_WholeChunks_
+  commentId: Overload:Useful.Extension.ExtensionMethods.WholeChunks
+  isSpec: "True"
+  fullName: Useful.Extension.ExtensionMethods.WholeChunks
+  nameWithType: ExtensionMethods.WholeChunks
+- uid: Useful.Json
+  name: Useful.Json
+  href: docs/Useful.Json.html
+  commentId: N:Useful.Json
+  fullName: Useful.Json
+  nameWithType: Useful.Json
+- uid: Useful.Json.ExtensionMethods
+  name: ExtensionMethods
+  href: docs/Useful.Json.ExtensionMethods.html
+  commentId: T:Useful.Json.ExtensionMethods
+  fullName: Useful.Json.ExtensionMethods
+  nameWithType: ExtensionMethods
+- uid: Useful.Json.ExtensionMethods.DeserializeManyGzipFiles*
+  name: DeserializeManyGzipFiles
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeManyGzipFiles_
+  commentId: Overload:Useful.Json.ExtensionMethods.DeserializeManyGzipFiles
+  isSpec: "True"
+  fullName: Useful.Json.ExtensionMethods.DeserializeManyGzipFiles
+  nameWithType: ExtensionMethods.DeserializeManyGzipFiles
+- uid: Useful.Json.ExtensionMethods.DeserializeManyGzipFiles``1(IEnumerable{System.String})
+  name: DeserializeManyGzipFiles<T>(IEnumerable<String>)
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeManyGzipFiles__1_IEnumerable_System_String__
+  commentId: M:Useful.Json.ExtensionMethods.DeserializeManyGzipFiles``1(IEnumerable{System.String})
+  name.vb: DeserializeManyGzipFiles(Of T)(IEnumerable(Of String))
+  fullName: Useful.Json.ExtensionMethods.DeserializeManyGzipFiles<T>(IEnumerable<System.String>)
+  fullName.vb: Useful.Json.ExtensionMethods.DeserializeManyGzipFiles(Of T)(IEnumerable(Of System.String))
+  nameWithType: ExtensionMethods.DeserializeManyGzipFiles<T>(IEnumerable<String>)
+  nameWithType.vb: ExtensionMethods.DeserializeManyGzipFiles(Of T)(IEnumerable(Of String))
+- uid: Useful.Json.ExtensionMethods.DeserializeObject*
+  name: DeserializeObject
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeObject_
+  commentId: Overload:Useful.Json.ExtensionMethods.DeserializeObject
+  isSpec: "True"
+  fullName: Useful.Json.ExtensionMethods.DeserializeObject
+  nameWithType: ExtensionMethods.DeserializeObject
+- uid: Useful.Json.ExtensionMethods.DeserializeObject``1(System.String)
+  name: DeserializeObject<T>(String)
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeObject__1_System_String_
+  commentId: M:Useful.Json.ExtensionMethods.DeserializeObject``1(System.String)
+  name.vb: DeserializeObject(Of T)(String)
+  fullName: Useful.Json.ExtensionMethods.DeserializeObject<T>(System.String)
+  fullName.vb: Useful.Json.ExtensionMethods.DeserializeObject(Of T)(System.String)
+  nameWithType: ExtensionMethods.DeserializeObject<T>(String)
+  nameWithType.vb: ExtensionMethods.DeserializeObject(Of T)(String)
+- uid: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes(System.Byte[],Type)
+  name: DeserializeObjectFromBytes(Byte[], Type)
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeObjectFromBytes_System_Byte___Type_
+  commentId: M:Useful.Json.ExtensionMethods.DeserializeObjectFromBytes(System.Byte[],Type)
+  name.vb: DeserializeObjectFromBytes(Byte(), Type)
+  fullName: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes(System.Byte[], Type)
+  fullName.vb: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes(System.Byte(), Type)
+  nameWithType: ExtensionMethods.DeserializeObjectFromBytes(Byte[], Type)
+  nameWithType.vb: ExtensionMethods.DeserializeObjectFromBytes(Byte(), Type)
+- uid: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes*
+  name: DeserializeObjectFromBytes
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeObjectFromBytes_
+  commentId: Overload:Useful.Json.ExtensionMethods.DeserializeObjectFromBytes
+  isSpec: "True"
+  fullName: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes
+  nameWithType: ExtensionMethods.DeserializeObjectFromBytes
+- uid: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes``1(System.Byte[])
+  name: DeserializeObjectFromBytes<T>(Byte[])
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_DeserializeObjectFromBytes__1_System_Byte___
+  commentId: M:Useful.Json.ExtensionMethods.DeserializeObjectFromBytes``1(System.Byte[])
+  name.vb: DeserializeObjectFromBytes(Of T)(Byte())
+  fullName: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes<T>(System.Byte[])
+  fullName.vb: Useful.Json.ExtensionMethods.DeserializeObjectFromBytes(Of T)(System.Byte())
+  nameWithType: ExtensionMethods.DeserializeObjectFromBytes<T>(Byte[])
+  nameWithType.vb: ExtensionMethods.DeserializeObjectFromBytes(Of T)(Byte())
+- uid: Useful.Json.ExtensionMethods.JsonSerializerSettings
+  name: JsonSerializerSettings
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_JsonSerializerSettings
+  commentId: F:Useful.Json.ExtensionMethods.JsonSerializerSettings
+  fullName: Useful.Json.ExtensionMethods.JsonSerializerSettings
+  nameWithType: ExtensionMethods.JsonSerializerSettings
+- uid: Useful.Json.ExtensionMethods.SerializeGzipToFile*
+  name: SerializeGzipToFile
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_SerializeGzipToFile_
+  commentId: Overload:Useful.Json.ExtensionMethods.SerializeGzipToFile
+  isSpec: "True"
+  fullName: Useful.Json.ExtensionMethods.SerializeGzipToFile
+  nameWithType: ExtensionMethods.SerializeGzipToFile
+- uid: Useful.Json.ExtensionMethods.SerializeGzipToFile``1(IEnumerable{``0},System.String)
+  name: SerializeGzipToFile<T>(IEnumerable<T>, String)
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_SerializeGzipToFile__1_IEnumerable___0__System_String_
+  commentId: M:Useful.Json.ExtensionMethods.SerializeGzipToFile``1(IEnumerable{``0},System.String)
+  name.vb: SerializeGzipToFile(Of T)(IEnumerable(Of T), String)
+  fullName: Useful.Json.ExtensionMethods.SerializeGzipToFile<T>(IEnumerable<T>, System.String)
+  fullName.vb: Useful.Json.ExtensionMethods.SerializeGzipToFile(Of T)(IEnumerable(Of T), System.String)
+  nameWithType: ExtensionMethods.SerializeGzipToFile<T>(IEnumerable<T>, String)
+  nameWithType.vb: ExtensionMethods.SerializeGzipToFile(Of T)(IEnumerable(Of T), String)
+- uid: Useful.Json.ExtensionMethods.SerializeObject(System.Object)
+  name: SerializeObject(Object)
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_SerializeObject_System_Object_
+  commentId: M:Useful.Json.ExtensionMethods.SerializeObject(System.Object)
+  fullName: Useful.Json.ExtensionMethods.SerializeObject(System.Object)
+  nameWithType: ExtensionMethods.SerializeObject(Object)
+- uid: Useful.Json.ExtensionMethods.SerializeObject*
+  name: SerializeObject
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_SerializeObject_
+  commentId: Overload:Useful.Json.ExtensionMethods.SerializeObject
+  isSpec: "True"
+  fullName: Useful.Json.ExtensionMethods.SerializeObject
+  nameWithType: ExtensionMethods.SerializeObject
+- uid: Useful.Json.ExtensionMethods.SerializeObjectToBytes(System.Object)
+  name: SerializeObjectToBytes(Object)
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_SerializeObjectToBytes_System_Object_
+  commentId: M:Useful.Json.ExtensionMethods.SerializeObjectToBytes(System.Object)
+  fullName: Useful.Json.ExtensionMethods.SerializeObjectToBytes(System.Object)
+  nameWithType: ExtensionMethods.SerializeObjectToBytes(Object)
+- uid: Useful.Json.ExtensionMethods.SerializeObjectToBytes*
+  name: SerializeObjectToBytes
+  href: docs/Useful.Json.ExtensionMethods.html#Useful_Json_ExtensionMethods_SerializeObjectToBytes_
+  commentId: Overload:Useful.Json.ExtensionMethods.SerializeObjectToBytes
+  isSpec: "True"
+  fullName: Useful.Json.ExtensionMethods.SerializeObjectToBytes
+  nameWithType: ExtensionMethods.SerializeObjectToBytes
+- uid: Useful.Prompt
+  name: Useful.Prompt
+  href: docs/Useful.Prompt.html
+  commentId: N:Useful.Prompt
+  fullName: Useful.Prompt
+  nameWithType: Useful.Prompt
+- uid: Useful.Prompt.ColorConsole
+  name: ColorConsole
+  href: docs/Useful.Prompt.ColorConsole.html
+  commentId: T:Useful.Prompt.ColorConsole
+  fullName: Useful.Prompt.ColorConsole
+  nameWithType: ColorConsole
+- uid: Useful.Prompt.ColorConsole.#ctor(Dictionary{Regex,Color})
+  name: ColorConsole(Dictionary<Regex, Color>)
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole__ctor_Dictionary_Regex_Color__
+  commentId: M:Useful.Prompt.ColorConsole.#ctor(Dictionary{Regex,Color})
+  name.vb: ColorConsole(Dictionary(Of Regex, Color))
+  fullName: Useful.Prompt.ColorConsole.ColorConsole(Dictionary<Regex, Color>)
+  fullName.vb: Useful.Prompt.ColorConsole.ColorConsole(Dictionary(Of Regex, Color))
+  nameWithType: ColorConsole.ColorConsole(Dictionary<Regex, Color>)
+  nameWithType.vb: ColorConsole.ColorConsole(Dictionary(Of Regex, Color))
+- uid: Useful.Prompt.ColorConsole.#ctor*
+  name: ColorConsole
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole__ctor_
+  commentId: Overload:Useful.Prompt.ColorConsole.#ctor
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorConsole.ColorConsole
+  nameWithType: ColorConsole.ColorConsole
+- uid: Useful.Prompt.ColorConsole.Write(System.String)
+  name: Write(String)
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_Write_System_String_
+  commentId: M:Useful.Prompt.ColorConsole.Write(System.String)
+  fullName: Useful.Prompt.ColorConsole.Write(System.String)
+  nameWithType: ColorConsole.Write(String)
+- uid: Useful.Prompt.ColorConsole.Write*
+  name: Write
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_Write_
+  commentId: Overload:Useful.Prompt.ColorConsole.Write
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorConsole.Write
+  nameWithType: ColorConsole.Write
+- uid: Useful.Prompt.ColorConsole.WriteLine(System.String)
+  name: WriteLine(String)
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_WriteLine_System_String_
+  commentId: M:Useful.Prompt.ColorConsole.WriteLine(System.String)
+  fullName: Useful.Prompt.ColorConsole.WriteLine(System.String)
+  nameWithType: ColorConsole.WriteLine(String)
+- uid: Useful.Prompt.ColorConsole.WriteLine*
+  name: WriteLine
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_WriteLine_
+  commentId: Overload:Useful.Prompt.ColorConsole.WriteLine
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorConsole.WriteLine
+  nameWithType: ColorConsole.WriteLine
+- uid: Useful.Prompt.ColorConsole.WriteLineStyled(System.String)
+  name: WriteLineStyled(String)
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_WriteLineStyled_System_String_
+  commentId: M:Useful.Prompt.ColorConsole.WriteLineStyled(System.String)
+  fullName: Useful.Prompt.ColorConsole.WriteLineStyled(System.String)
+  nameWithType: ColorConsole.WriteLineStyled(String)
+- uid: Useful.Prompt.ColorConsole.WriteLineStyled*
+  name: WriteLineStyled
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_WriteLineStyled_
+  commentId: Overload:Useful.Prompt.ColorConsole.WriteLineStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorConsole.WriteLineStyled
+  nameWithType: ColorConsole.WriteLineStyled
+- uid: Useful.Prompt.ColorConsole.WriteStyled(System.String)
+  name: WriteStyled(String)
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_WriteStyled_System_String_
+  commentId: M:Useful.Prompt.ColorConsole.WriteStyled(System.String)
+  fullName: Useful.Prompt.ColorConsole.WriteStyled(System.String)
+  nameWithType: ColorConsole.WriteStyled(String)
+- uid: Useful.Prompt.ColorConsole.WriteStyled*
+  name: WriteStyled
+  href: docs/Useful.Prompt.ColorConsole.html#Useful_Prompt_ColorConsole_WriteStyled_
+  commentId: Overload:Useful.Prompt.ColorConsole.WriteStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorConsole.WriteStyled
+  nameWithType: ColorConsole.WriteStyled
+- uid: Useful.Prompt.ColorfulConsole
+  name: ColorfulConsole
+  href: docs/Useful.Prompt.ColorfulConsole.html
+  commentId: T:Useful.Prompt.ColorfulConsole
+  fullName: Useful.Prompt.ColorfulConsole
+  nameWithType: ColorfulConsole
+- uid: Useful.Prompt.ColorfulConsole.#ctor
+  name: ColorfulConsole()
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole__ctor
+  commentId: M:Useful.Prompt.ColorfulConsole.#ctor
+  fullName: Useful.Prompt.ColorfulConsole.ColorfulConsole()
+  nameWithType: ColorfulConsole.ColorfulConsole()
+- uid: Useful.Prompt.ColorfulConsole.#ctor(Color,Dictionary{Regex,Color})
+  name: ColorfulConsole(Color, Dictionary<Regex, Color>)
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole__ctor_Color_Dictionary_Regex_Color__
+  commentId: M:Useful.Prompt.ColorfulConsole.#ctor(Color,Dictionary{Regex,Color})
+  name.vb: ColorfulConsole(Color, Dictionary(Of Regex, Color))
+  fullName: Useful.Prompt.ColorfulConsole.ColorfulConsole(Color, Dictionary<Regex, Color>)
+  fullName.vb: Useful.Prompt.ColorfulConsole.ColorfulConsole(Color, Dictionary(Of Regex, Color))
+  nameWithType: ColorfulConsole.ColorfulConsole(Color, Dictionary<Regex, Color>)
+  nameWithType.vb: ColorfulConsole.ColorfulConsole(Color, Dictionary(Of Regex, Color))
+- uid: Useful.Prompt.ColorfulConsole.#ctor*
+  name: ColorfulConsole
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole__ctor_
+  commentId: Overload:Useful.Prompt.ColorfulConsole.#ctor
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorfulConsole.ColorfulConsole
+  nameWithType: ColorfulConsole.ColorfulConsole
+- uid: Useful.Prompt.ColorfulConsole.Update(Color,Dictionary{Regex,Color})
+  name: Update(Color, Dictionary<Regex, Color>)
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_Update_Color_Dictionary_Regex_Color__
+  commentId: M:Useful.Prompt.ColorfulConsole.Update(Color,Dictionary{Regex,Color})
+  name.vb: Update(Color, Dictionary(Of Regex, Color))
+  fullName: Useful.Prompt.ColorfulConsole.Update(Color, Dictionary<Regex, Color>)
+  fullName.vb: Useful.Prompt.ColorfulConsole.Update(Color, Dictionary(Of Regex, Color))
+  nameWithType: ColorfulConsole.Update(Color, Dictionary<Regex, Color>)
+  nameWithType.vb: ColorfulConsole.Update(Color, Dictionary(Of Regex, Color))
+- uid: Useful.Prompt.ColorfulConsole.Update*
+  name: Update
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_Update_
+  commentId: Overload:Useful.Prompt.ColorfulConsole.Update
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorfulConsole.Update
+  nameWithType: ColorfulConsole.Update
+- uid: Useful.Prompt.ColorfulConsole.Write(System.String)
+  name: Write(String)
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_Write_System_String_
+  commentId: M:Useful.Prompt.ColorfulConsole.Write(System.String)
+  fullName: Useful.Prompt.ColorfulConsole.Write(System.String)
+  nameWithType: ColorfulConsole.Write(String)
+- uid: Useful.Prompt.ColorfulConsole.Write*
+  name: Write
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_Write_
+  commentId: Overload:Useful.Prompt.ColorfulConsole.Write
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorfulConsole.Write
+  nameWithType: ColorfulConsole.Write
+- uid: Useful.Prompt.ColorfulConsole.WriteLine(System.String)
+  name: WriteLine(String)
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_WriteLine_System_String_
+  commentId: M:Useful.Prompt.ColorfulConsole.WriteLine(System.String)
+  fullName: Useful.Prompt.ColorfulConsole.WriteLine(System.String)
+  nameWithType: ColorfulConsole.WriteLine(String)
+- uid: Useful.Prompt.ColorfulConsole.WriteLine*
+  name: WriteLine
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_WriteLine_
+  commentId: Overload:Useful.Prompt.ColorfulConsole.WriteLine
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorfulConsole.WriteLine
+  nameWithType: ColorfulConsole.WriteLine
+- uid: Useful.Prompt.ColorfulConsole.WriteLineStyled(System.String)
+  name: WriteLineStyled(String)
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_WriteLineStyled_System_String_
+  commentId: M:Useful.Prompt.ColorfulConsole.WriteLineStyled(System.String)
+  fullName: Useful.Prompt.ColorfulConsole.WriteLineStyled(System.String)
+  nameWithType: ColorfulConsole.WriteLineStyled(String)
+- uid: Useful.Prompt.ColorfulConsole.WriteLineStyled*
+  name: WriteLineStyled
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_WriteLineStyled_
+  commentId: Overload:Useful.Prompt.ColorfulConsole.WriteLineStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorfulConsole.WriteLineStyled
+  nameWithType: ColorfulConsole.WriteLineStyled
+- uid: Useful.Prompt.ColorfulConsole.WriteStyled(System.String)
+  name: WriteStyled(String)
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_WriteStyled_System_String_
+  commentId: M:Useful.Prompt.ColorfulConsole.WriteStyled(System.String)
+  fullName: Useful.Prompt.ColorfulConsole.WriteStyled(System.String)
+  nameWithType: ColorfulConsole.WriteStyled(String)
+- uid: Useful.Prompt.ColorfulConsole.WriteStyled*
+  name: WriteStyled
+  href: docs/Useful.Prompt.ColorfulConsole.html#Useful_Prompt_ColorfulConsole_WriteStyled_
+  commentId: Overload:Useful.Prompt.ColorfulConsole.WriteStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.ColorfulConsole.WriteStyled
+  nameWithType: ColorfulConsole.WriteStyled
+- uid: Useful.Prompt.DefaultConsole
+  name: DefaultConsole
+  href: docs/Useful.Prompt.DefaultConsole.html
+  commentId: T:Useful.Prompt.DefaultConsole
+  fullName: Useful.Prompt.DefaultConsole
+  nameWithType: DefaultConsole
+- uid: Useful.Prompt.DefaultConsole.Write(System.String)
+  name: Write(String)
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_Write_System_String_
+  commentId: M:Useful.Prompt.DefaultConsole.Write(System.String)
+  fullName: Useful.Prompt.DefaultConsole.Write(System.String)
+  nameWithType: DefaultConsole.Write(String)
+- uid: Useful.Prompt.DefaultConsole.Write*
+  name: Write
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_Write_
+  commentId: Overload:Useful.Prompt.DefaultConsole.Write
+  isSpec: "True"
+  fullName: Useful.Prompt.DefaultConsole.Write
+  nameWithType: DefaultConsole.Write
+- uid: Useful.Prompt.DefaultConsole.WriteLine(System.String)
+  name: WriteLine(String)
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_WriteLine_System_String_
+  commentId: M:Useful.Prompt.DefaultConsole.WriteLine(System.String)
+  fullName: Useful.Prompt.DefaultConsole.WriteLine(System.String)
+  nameWithType: DefaultConsole.WriteLine(String)
+- uid: Useful.Prompt.DefaultConsole.WriteLine*
+  name: WriteLine
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_WriteLine_
+  commentId: Overload:Useful.Prompt.DefaultConsole.WriteLine
+  isSpec: "True"
+  fullName: Useful.Prompt.DefaultConsole.WriteLine
+  nameWithType: DefaultConsole.WriteLine
+- uid: Useful.Prompt.DefaultConsole.WriteLineStyled(System.String)
+  name: WriteLineStyled(String)
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_WriteLineStyled_System_String_
+  commentId: M:Useful.Prompt.DefaultConsole.WriteLineStyled(System.String)
+  fullName: Useful.Prompt.DefaultConsole.WriteLineStyled(System.String)
+  nameWithType: DefaultConsole.WriteLineStyled(String)
+- uid: Useful.Prompt.DefaultConsole.WriteLineStyled*
+  name: WriteLineStyled
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_WriteLineStyled_
+  commentId: Overload:Useful.Prompt.DefaultConsole.WriteLineStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.DefaultConsole.WriteLineStyled
+  nameWithType: DefaultConsole.WriteLineStyled
+- uid: Useful.Prompt.DefaultConsole.WriteStyled(System.String)
+  name: WriteStyled(String)
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_WriteStyled_System_String_
+  commentId: M:Useful.Prompt.DefaultConsole.WriteStyled(System.String)
+  fullName: Useful.Prompt.DefaultConsole.WriteStyled(System.String)
+  nameWithType: DefaultConsole.WriteStyled(String)
+- uid: Useful.Prompt.DefaultConsole.WriteStyled*
+  name: WriteStyled
+  href: docs/Useful.Prompt.DefaultConsole.html#Useful_Prompt_DefaultConsole_WriteStyled_
+  commentId: Overload:Useful.Prompt.DefaultConsole.WriteStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.DefaultConsole.WriteStyled
+  nameWithType: DefaultConsole.WriteStyled
+- uid: Useful.Prompt.IConsole
+  name: IConsole
+  href: docs/Useful.Prompt.IConsole.html
+  commentId: T:Useful.Prompt.IConsole
+  fullName: Useful.Prompt.IConsole
+  nameWithType: IConsole
+- uid: Useful.Prompt.IConsole.Write(System.String)
+  name: Write(String)
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_Write_System_String_
+  commentId: M:Useful.Prompt.IConsole.Write(System.String)
+  fullName: Useful.Prompt.IConsole.Write(System.String)
+  nameWithType: IConsole.Write(String)
+- uid: Useful.Prompt.IConsole.Write*
+  name: Write
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_Write_
+  commentId: Overload:Useful.Prompt.IConsole.Write
+  isSpec: "True"
+  fullName: Useful.Prompt.IConsole.Write
+  nameWithType: IConsole.Write
+- uid: Useful.Prompt.IConsole.WriteLine(System.String)
+  name: WriteLine(String)
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_WriteLine_System_String_
+  commentId: M:Useful.Prompt.IConsole.WriteLine(System.String)
+  fullName: Useful.Prompt.IConsole.WriteLine(System.String)
+  nameWithType: IConsole.WriteLine(String)
+- uid: Useful.Prompt.IConsole.WriteLine*
+  name: WriteLine
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_WriteLine_
+  commentId: Overload:Useful.Prompt.IConsole.WriteLine
+  isSpec: "True"
+  fullName: Useful.Prompt.IConsole.WriteLine
+  nameWithType: IConsole.WriteLine
+- uid: Useful.Prompt.IConsole.WriteLineStyled(System.String)
+  name: WriteLineStyled(String)
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_WriteLineStyled_System_String_
+  commentId: M:Useful.Prompt.IConsole.WriteLineStyled(System.String)
+  fullName: Useful.Prompt.IConsole.WriteLineStyled(System.String)
+  nameWithType: IConsole.WriteLineStyled(String)
+- uid: Useful.Prompt.IConsole.WriteLineStyled*
+  name: WriteLineStyled
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_WriteLineStyled_
+  commentId: Overload:Useful.Prompt.IConsole.WriteLineStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.IConsole.WriteLineStyled
+  nameWithType: IConsole.WriteLineStyled
+- uid: Useful.Prompt.IConsole.WriteStyled(System.String)
+  name: WriteStyled(String)
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_WriteStyled_System_String_
+  commentId: M:Useful.Prompt.IConsole.WriteStyled(System.String)
+  fullName: Useful.Prompt.IConsole.WriteStyled(System.String)
+  nameWithType: IConsole.WriteStyled(String)
+- uid: Useful.Prompt.IConsole.WriteStyled*
+  name: WriteStyled
+  href: docs/Useful.Prompt.IConsole.html#Useful_Prompt_IConsole_WriteStyled_
+  commentId: Overload:Useful.Prompt.IConsole.WriteStyled
+  isSpec: "True"
+  fullName: Useful.Prompt.IConsole.WriteStyled
+  nameWithType: IConsole.WriteStyled
+- uid: Useful.Prompt.Prompt
+  name: Prompt
+  href: docs/Useful.Prompt.Prompt.html
+  commentId: T:Useful.Prompt.Prompt
+  fullName: Useful.Prompt.Prompt
+  nameWithType: Prompt
+- uid: Useful.Prompt.Prompt.Build
+  name: Build()
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_Build
+  commentId: M:Useful.Prompt.Prompt.Build
+  fullName: Useful.Prompt.Prompt.Build()
+  nameWithType: Prompt.Build()
+- uid: Useful.Prompt.Prompt.Build*
+  name: Build
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_Build_
+  commentId: Overload:Useful.Prompt.Prompt.Build
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.Build
+  nameWithType: Prompt.Build
+- uid: Useful.Prompt.Prompt.Lock
+  name: Lock
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_Lock
+  commentId: F:Useful.Prompt.Prompt.Lock
+  fullName: Useful.Prompt.Prompt.Lock
+  nameWithType: Prompt.Lock
+- uid: Useful.Prompt.Prompt.ResetPositionUnlocked
+  name: ResetPositionUnlocked()
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_ResetPositionUnlocked
+  commentId: M:Useful.Prompt.Prompt.ResetPositionUnlocked
+  fullName: Useful.Prompt.Prompt.ResetPositionUnlocked()
+  nameWithType: Prompt.ResetPositionUnlocked()
+- uid: Useful.Prompt.Prompt.ResetPositionUnlocked*
+  name: ResetPositionUnlocked
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_ResetPositionUnlocked_
+  commentId: Overload:Useful.Prompt.Prompt.ResetPositionUnlocked
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.ResetPositionUnlocked
+  nameWithType: Prompt.ResetPositionUnlocked
+- uid: Useful.Prompt.Prompt.Run(Useful.Prompt.PromptBuilder)
+  name: Run(PromptBuilder)
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_Run_Useful_Prompt_PromptBuilder_
+  commentId: M:Useful.Prompt.Prompt.Run(Useful.Prompt.PromptBuilder)
+  fullName: Useful.Prompt.Prompt.Run(Useful.Prompt.PromptBuilder)
+  nameWithType: Prompt.Run(PromptBuilder)
+- uid: Useful.Prompt.Prompt.Run*
+  name: Run
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_Run_
+  commentId: Overload:Useful.Prompt.Prompt.Run
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.Run
+  nameWithType: Prompt.Run
+- uid: Useful.Prompt.Prompt.UpdatePrompt
+  name: UpdatePrompt()
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_UpdatePrompt
+  commentId: M:Useful.Prompt.Prompt.UpdatePrompt
+  fullName: Useful.Prompt.Prompt.UpdatePrompt()
+  nameWithType: Prompt.UpdatePrompt()
+- uid: Useful.Prompt.Prompt.UpdatePrompt*
+  name: UpdatePrompt
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_UpdatePrompt_
+  commentId: Overload:Useful.Prompt.Prompt.UpdatePrompt
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.UpdatePrompt
+  nameWithType: Prompt.UpdatePrompt
+- uid: Useful.Prompt.Prompt.WriteAtPosition(System.String,System.Int32,System.Int32)
+  name: WriteAtPosition(String, Int32, Int32)
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteAtPosition_System_String_System_Int32_System_Int32_
+  commentId: M:Useful.Prompt.Prompt.WriteAtPosition(System.String,System.Int32,System.Int32)
+  fullName: Useful.Prompt.Prompt.WriteAtPosition(System.String, System.Int32, System.Int32)
+  nameWithType: Prompt.WriteAtPosition(String, Int32, Int32)
+- uid: Useful.Prompt.Prompt.WriteAtPosition*
+  name: WriteAtPosition
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteAtPosition_
+  commentId: Overload:Useful.Prompt.Prompt.WriteAtPosition
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.WriteAtPosition
+  nameWithType: Prompt.WriteAtPosition
+- uid: Useful.Prompt.Prompt.WriteAtPositionUnlocked(System.String,System.Int32,System.Int32)
+  name: WriteAtPositionUnlocked(String, Int32, Int32)
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteAtPositionUnlocked_System_String_System_Int32_System_Int32_
+  commentId: M:Useful.Prompt.Prompt.WriteAtPositionUnlocked(System.String,System.Int32,System.Int32)
+  fullName: Useful.Prompt.Prompt.WriteAtPositionUnlocked(System.String, System.Int32, System.Int32)
+  nameWithType: Prompt.WriteAtPositionUnlocked(String, Int32, Int32)
+- uid: Useful.Prompt.Prompt.WriteAtPositionUnlocked*
+  name: WriteAtPositionUnlocked
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteAtPositionUnlocked_
+  commentId: Overload:Useful.Prompt.Prompt.WriteAtPositionUnlocked
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.WriteAtPositionUnlocked
+  nameWithType: Prompt.WriteAtPositionUnlocked
+- uid: Useful.Prompt.Prompt.WriteAtPositionUnlockedNoReset(System.String,System.Int32,System.Int32)
+  name: WriteAtPositionUnlockedNoReset(String, Int32, Int32)
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteAtPositionUnlockedNoReset_System_String_System_Int32_System_Int32_
+  commentId: M:Useful.Prompt.Prompt.WriteAtPositionUnlockedNoReset(System.String,System.Int32,System.Int32)
+  fullName: Useful.Prompt.Prompt.WriteAtPositionUnlockedNoReset(System.String, System.Int32, System.Int32)
+  nameWithType: Prompt.WriteAtPositionUnlockedNoReset(String, Int32, Int32)
+- uid: Useful.Prompt.Prompt.WriteAtPositionUnlockedNoReset*
+  name: WriteAtPositionUnlockedNoReset
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteAtPositionUnlockedNoReset_
+  commentId: Overload:Useful.Prompt.Prompt.WriteAtPositionUnlockedNoReset
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.WriteAtPositionUnlockedNoReset
+  nameWithType: Prompt.WriteAtPositionUnlockedNoReset
+- uid: Useful.Prompt.Prompt.WriteLine(System.String,System.Object[])
+  name: WriteLine(String, Object[])
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteLine_System_String_System_Object___
+  commentId: M:Useful.Prompt.Prompt.WriteLine(System.String,System.Object[])
+  name.vb: WriteLine(String, Object())
+  fullName: Useful.Prompt.Prompt.WriteLine(System.String, System.Object[])
+  fullName.vb: Useful.Prompt.Prompt.WriteLine(System.String, System.Object())
+  nameWithType: Prompt.WriteLine(String, Object[])
+  nameWithType.vb: Prompt.WriteLine(String, Object())
+- uid: Useful.Prompt.Prompt.WriteLine*
+  name: WriteLine
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteLine_
+  commentId: Overload:Useful.Prompt.Prompt.WriteLine
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.WriteLine
+  nameWithType: Prompt.WriteLine
+- uid: Useful.Prompt.Prompt.WriteLineUnlocked(System.String,System.Object[])
+  name: WriteLineUnlocked(String, Object[])
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteLineUnlocked_System_String_System_Object___
+  commentId: M:Useful.Prompt.Prompt.WriteLineUnlocked(System.String,System.Object[])
+  name.vb: WriteLineUnlocked(String, Object())
+  fullName: Useful.Prompt.Prompt.WriteLineUnlocked(System.String, System.Object[])
+  fullName.vb: Useful.Prompt.Prompt.WriteLineUnlocked(System.String, System.Object())
+  nameWithType: Prompt.WriteLineUnlocked(String, Object[])
+  nameWithType.vb: Prompt.WriteLineUnlocked(String, Object())
+- uid: Useful.Prompt.Prompt.WriteLineUnlocked*
+  name: WriteLineUnlocked
+  href: docs/Useful.Prompt.Prompt.html#Useful_Prompt_Prompt_WriteLineUnlocked_
+  commentId: Overload:Useful.Prompt.Prompt.WriteLineUnlocked
+  isSpec: "True"
+  fullName: Useful.Prompt.Prompt.WriteLineUnlocked
+  nameWithType: Prompt.WriteLineUnlocked
+- uid: Useful.Prompt.PromptBuilder
+  name: PromptBuilder
+  href: docs/Useful.Prompt.PromptBuilder.html
+  commentId: T:Useful.Prompt.PromptBuilder
+  fullName: Useful.Prompt.PromptBuilder
+  nameWithType: PromptBuilder
+- uid: Useful.Prompt.PromptBuilder.AutomaticUpdatePromptTimeSpan
+  name: AutomaticUpdatePromptTimeSpan
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_AutomaticUpdatePromptTimeSpan
+  commentId: P:Useful.Prompt.PromptBuilder.AutomaticUpdatePromptTimeSpan
+  fullName: Useful.Prompt.PromptBuilder.AutomaticUpdatePromptTimeSpan
+  nameWithType: PromptBuilder.AutomaticUpdatePromptTimeSpan
+- uid: Useful.Prompt.PromptBuilder.AutomaticUpdatePromptTimeSpan*
+  name: AutomaticUpdatePromptTimeSpan
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_AutomaticUpdatePromptTimeSpan_
+  commentId: Overload:Useful.Prompt.PromptBuilder.AutomaticUpdatePromptTimeSpan
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.AutomaticUpdatePromptTimeSpan
+  nameWithType: PromptBuilder.AutomaticUpdatePromptTimeSpan
+- uid: Useful.Prompt.PromptBuilder.ConsoleWriter
+  name: ConsoleWriter
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_ConsoleWriter
+  commentId: P:Useful.Prompt.PromptBuilder.ConsoleWriter
+  fullName: Useful.Prompt.PromptBuilder.ConsoleWriter
+  nameWithType: PromptBuilder.ConsoleWriter
+- uid: Useful.Prompt.PromptBuilder.ConsoleWriter*
+  name: ConsoleWriter
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_ConsoleWriter_
+  commentId: Overload:Useful.Prompt.PromptBuilder.ConsoleWriter
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.ConsoleWriter
+  nameWithType: PromptBuilder.ConsoleWriter
+- uid: Useful.Prompt.PromptBuilder.KeyHandler
+  name: KeyHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_KeyHandler
+  commentId: P:Useful.Prompt.PromptBuilder.KeyHandler
+  fullName: Useful.Prompt.PromptBuilder.KeyHandler
+  nameWithType: PromptBuilder.KeyHandler
+- uid: Useful.Prompt.PromptBuilder.KeyHandler*
+  name: KeyHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_KeyHandler_
+  commentId: Overload:Useful.Prompt.PromptBuilder.KeyHandler
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.KeyHandler
+  nameWithType: PromptBuilder.KeyHandler
+- uid: Useful.Prompt.PromptBuilder.LineHandler
+  name: LineHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_LineHandler
+  commentId: P:Useful.Prompt.PromptBuilder.LineHandler
+  fullName: Useful.Prompt.PromptBuilder.LineHandler
+  nameWithType: PromptBuilder.LineHandler
+- uid: Useful.Prompt.PromptBuilder.LineHandler*
+  name: LineHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_LineHandler_
+  commentId: Overload:Useful.Prompt.PromptBuilder.LineHandler
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.LineHandler
+  nameWithType: PromptBuilder.LineHandler
+- uid: Useful.Prompt.PromptBuilder.OnStartupAction
+  name: OnStartupAction
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_OnStartupAction
+  commentId: P:Useful.Prompt.PromptBuilder.OnStartupAction
+  fullName: Useful.Prompt.PromptBuilder.OnStartupAction
+  nameWithType: PromptBuilder.OnStartupAction
+- uid: Useful.Prompt.PromptBuilder.OnStartupAction*
+  name: OnStartupAction
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_OnStartupAction_
+  commentId: Overload:Useful.Prompt.PromptBuilder.OnStartupAction
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.OnStartupAction
+  nameWithType: PromptBuilder.OnStartupAction
+- uid: Useful.Prompt.PromptBuilder.PopulatePrompt
+  name: PopulatePrompt
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_PopulatePrompt
+  commentId: P:Useful.Prompt.PromptBuilder.PopulatePrompt
+  fullName: Useful.Prompt.PromptBuilder.PopulatePrompt
+  nameWithType: PromptBuilder.PopulatePrompt
+- uid: Useful.Prompt.PromptBuilder.PopulatePrompt*
+  name: PopulatePrompt
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_PopulatePrompt_
+  commentId: Overload:Useful.Prompt.PromptBuilder.PopulatePrompt
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.PopulatePrompt
+  nameWithType: PromptBuilder.PopulatePrompt
+- uid: Useful.Prompt.PromptBuilder.QuitKey
+  name: QuitKey
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_QuitKey
+  commentId: P:Useful.Prompt.PromptBuilder.QuitKey
+  fullName: Useful.Prompt.PromptBuilder.QuitKey
+  nameWithType: PromptBuilder.QuitKey
+- uid: Useful.Prompt.PromptBuilder.QuitKey*
+  name: QuitKey
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_QuitKey_
+  commentId: Overload:Useful.Prompt.PromptBuilder.QuitKey
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.QuitKey
+  nameWithType: PromptBuilder.QuitKey
+- uid: Useful.Prompt.PromptBuilder.QuitLine
+  name: QuitLine
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_QuitLine
+  commentId: P:Useful.Prompt.PromptBuilder.QuitLine
+  fullName: Useful.Prompt.PromptBuilder.QuitLine
+  nameWithType: PromptBuilder.QuitLine
+- uid: Useful.Prompt.PromptBuilder.QuitLine*
+  name: QuitLine
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_QuitLine_
+  commentId: Overload:Useful.Prompt.PromptBuilder.QuitLine
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.QuitLine
+  nameWithType: PromptBuilder.QuitLine
+- uid: Useful.Prompt.PromptBuilder.UseKeyHandler
+  name: UseKeyHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_UseKeyHandler
+  commentId: P:Useful.Prompt.PromptBuilder.UseKeyHandler
+  fullName: Useful.Prompt.PromptBuilder.UseKeyHandler
+  nameWithType: PromptBuilder.UseKeyHandler
+- uid: Useful.Prompt.PromptBuilder.UseKeyHandler*
+  name: UseKeyHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_UseKeyHandler_
+  commentId: Overload:Useful.Prompt.PromptBuilder.UseKeyHandler
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.UseKeyHandler
+  nameWithType: PromptBuilder.UseKeyHandler
+- uid: Useful.Prompt.PromptBuilder.UseLineHandler
+  name: UseLineHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_UseLineHandler
+  commentId: P:Useful.Prompt.PromptBuilder.UseLineHandler
+  fullName: Useful.Prompt.PromptBuilder.UseLineHandler
+  nameWithType: PromptBuilder.UseLineHandler
+- uid: Useful.Prompt.PromptBuilder.UseLineHandler*
+  name: UseLineHandler
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_UseLineHandler_
+  commentId: Overload:Useful.Prompt.PromptBuilder.UseLineHandler
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.UseLineHandler
+  nameWithType: PromptBuilder.UseLineHandler
+- uid: Useful.Prompt.PromptBuilder.UseOnStartupAction
+  name: UseOnStartupAction
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_UseOnStartupAction
+  commentId: P:Useful.Prompt.PromptBuilder.UseOnStartupAction
+  fullName: Useful.Prompt.PromptBuilder.UseOnStartupAction
+  nameWithType: PromptBuilder.UseOnStartupAction
+- uid: Useful.Prompt.PromptBuilder.UseOnStartupAction*
+  name: UseOnStartupAction
+  href: docs/Useful.Prompt.PromptBuilder.html#Useful_Prompt_PromptBuilder_UseOnStartupAction_
+  commentId: Overload:Useful.Prompt.PromptBuilder.UseOnStartupAction
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilder.UseOnStartupAction
+  nameWithType: PromptBuilder.UseOnStartupAction
+- uid: Useful.Prompt.PromptBuilderExtensionMethods
+  name: PromptBuilderExtensionMethods
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html
+  commentId: T:Useful.Prompt.PromptBuilderExtensionMethods
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods
+  nameWithType: PromptBuilderExtensionMethods
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan(Useful.Prompt.PromptBuilder,TimeSpan)
+  name: SetAutoPromptUpdateIfUnlockedTimeSpan(PromptBuilder, TimeSpan)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetAutoPromptUpdateIfUnlockedTimeSpan_Useful_Prompt_PromptBuilder_TimeSpan_
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan(Useful.Prompt.PromptBuilder,TimeSpan)
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan(Useful.Prompt.PromptBuilder, TimeSpan)
+  nameWithType: PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan(PromptBuilder, TimeSpan)
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan*
+  name: SetAutoPromptUpdateIfUnlockedTimeSpan
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetAutoPromptUpdateIfUnlockedTimeSpan_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan
+  nameWithType: PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter(Useful.Prompt.PromptBuilder,Useful.Prompt.IConsole)
+  name: SetConsoleWriter(PromptBuilder, IConsole)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetConsoleWriter_Useful_Prompt_PromptBuilder_Useful_Prompt_IConsole_
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter(Useful.Prompt.PromptBuilder,Useful.Prompt.IConsole)
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter(Useful.Prompt.PromptBuilder, Useful.Prompt.IConsole)
+  nameWithType: PromptBuilderExtensionMethods.SetConsoleWriter(PromptBuilder, IConsole)
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter*
+  name: SetConsoleWriter
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetConsoleWriter_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter
+  nameWithType: PromptBuilderExtensionMethods.SetConsoleWriter
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler(Useful.Prompt.PromptBuilder,Func{ConsoleKeyInfo,Task})
+  name: SetKeyHandler(PromptBuilder, Func<ConsoleKeyInfo, Task>)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetKeyHandler_Useful_Prompt_PromptBuilder_Func_ConsoleKeyInfo_Task__
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler(Useful.Prompt.PromptBuilder,Func{ConsoleKeyInfo,Task})
+  name.vb: SetKeyHandler(PromptBuilder, Func(Of ConsoleKeyInfo, Task))
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler(Useful.Prompt.PromptBuilder, Func<ConsoleKeyInfo, Task>)
+  fullName.vb: Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler(Useful.Prompt.PromptBuilder, Func(Of ConsoleKeyInfo, Task))
+  nameWithType: PromptBuilderExtensionMethods.SetKeyHandler(PromptBuilder, Func<ConsoleKeyInfo, Task>)
+  nameWithType.vb: PromptBuilderExtensionMethods.SetKeyHandler(PromptBuilder, Func(Of ConsoleKeyInfo, Task))
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler*
+  name: SetKeyHandler
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetKeyHandler_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler
+  nameWithType: PromptBuilderExtensionMethods.SetKeyHandler
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler(Useful.Prompt.PromptBuilder,Func{System.String,Task})
+  name: SetLineHandler(PromptBuilder, Func<String, Task>)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetLineHandler_Useful_Prompt_PromptBuilder_Func_System_String_Task__
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler(Useful.Prompt.PromptBuilder,Func{System.String,Task})
+  name.vb: SetLineHandler(PromptBuilder, Func(Of String, Task))
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler(Useful.Prompt.PromptBuilder, Func<System.String, Task>)
+  fullName.vb: Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler(Useful.Prompt.PromptBuilder, Func(Of System.String, Task))
+  nameWithType: PromptBuilderExtensionMethods.SetLineHandler(PromptBuilder, Func<String, Task>)
+  nameWithType.vb: PromptBuilderExtensionMethods.SetLineHandler(PromptBuilder, Func(Of String, Task))
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler*
+  name: SetLineHandler
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetLineHandler_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler
+  nameWithType: PromptBuilderExtensionMethods.SetLineHandler
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction(Useful.Prompt.PromptBuilder,Func{Task})
+  name: SetOnStartupAction(PromptBuilder, Func<Task>)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetOnStartupAction_Useful_Prompt_PromptBuilder_Func_Task__
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction(Useful.Prompt.PromptBuilder,Func{Task})
+  name.vb: SetOnStartupAction(PromptBuilder, Func(Of Task))
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction(Useful.Prompt.PromptBuilder, Func<Task>)
+  fullName.vb: Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction(Useful.Prompt.PromptBuilder, Func(Of Task))
+  nameWithType: PromptBuilderExtensionMethods.SetOnStartupAction(PromptBuilder, Func<Task>)
+  nameWithType.vb: PromptBuilderExtensionMethods.SetOnStartupAction(PromptBuilder, Func(Of Task))
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction*
+  name: SetOnStartupAction
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetOnStartupAction_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction
+  nameWithType: PromptBuilderExtensionMethods.SetOnStartupAction
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction(Useful.Prompt.PromptBuilder,Func{Task{System.String}})
+  name: SetPopulatePromptAction(PromptBuilder, Func<Task<String>>)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetPopulatePromptAction_Useful_Prompt_PromptBuilder_Func_Task_System_String___
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction(Useful.Prompt.PromptBuilder,Func{Task{System.String}})
+  name.vb: SetPopulatePromptAction(PromptBuilder, Func(Of Task(Of String)))
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction(Useful.Prompt.PromptBuilder, Func<Task<System.String>>)
+  fullName.vb: Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction(Useful.Prompt.PromptBuilder, Func(Of Task(Of System.String)))
+  nameWithType: PromptBuilderExtensionMethods.SetPopulatePromptAction(PromptBuilder, Func<Task<String>>)
+  nameWithType.vb: PromptBuilderExtensionMethods.SetPopulatePromptAction(PromptBuilder, Func(Of Task(Of String)))
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction*
+  name: SetPopulatePromptAction
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetPopulatePromptAction_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction
+  nameWithType: PromptBuilderExtensionMethods.SetPopulatePromptAction
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo(Useful.Prompt.PromptBuilder,ConsoleKey)
+  name: SetQuitKeyInfo(PromptBuilder, ConsoleKey)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetQuitKeyInfo_Useful_Prompt_PromptBuilder_ConsoleKey_
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo(Useful.Prompt.PromptBuilder,ConsoleKey)
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo(Useful.Prompt.PromptBuilder, ConsoleKey)
+  nameWithType: PromptBuilderExtensionMethods.SetQuitKeyInfo(PromptBuilder, ConsoleKey)
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo*
+  name: SetQuitKeyInfo
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetQuitKeyInfo_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo
+  nameWithType: PromptBuilderExtensionMethods.SetQuitKeyInfo
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine(Useful.Prompt.PromptBuilder,System.String)
+  name: SetQuitLine(PromptBuilder, String)
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetQuitLine_Useful_Prompt_PromptBuilder_System_String_
+  commentId: M:Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine(Useful.Prompt.PromptBuilder,System.String)
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine(Useful.Prompt.PromptBuilder, System.String)
+  nameWithType: PromptBuilderExtensionMethods.SetQuitLine(PromptBuilder, String)
+- uid: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine*
+  name: SetQuitLine
+  href: docs/Useful.Prompt.PromptBuilderExtensionMethods.html#Useful_Prompt_PromptBuilderExtensionMethods_SetQuitLine_
+  commentId: Overload:Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine
+  isSpec: "True"
+  fullName: Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine
+  nameWithType: PromptBuilderExtensionMethods.SetQuitLine
+- uid: Useful.Tests
+  name: Useful.Tests
+  href: docs/Useful.Tests.html
+  commentId: N:Useful.Tests
+  fullName: Useful.Tests
+  nameWithType: Useful.Tests
+- uid: Useful.Tests.CsvTests
+  name: CsvTests
+  href: docs/Useful.Tests.CsvTests.html
+  commentId: T:Useful.Tests.CsvTests
+  fullName: Useful.Tests.CsvTests
+  nameWithType: CsvTests
+- uid: Useful.Tests.CsvTests.WriteCsvAdvanced
+  name: WriteCsvAdvanced()
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvAdvanced
+  commentId: M:Useful.Tests.CsvTests.WriteCsvAdvanced
+  fullName: Useful.Tests.CsvTests.WriteCsvAdvanced()
+  nameWithType: CsvTests.WriteCsvAdvanced()
+- uid: Useful.Tests.CsvTests.WriteCsvAdvanced*
+  name: WriteCsvAdvanced
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvAdvanced_
+  commentId: Overload:Useful.Tests.CsvTests.WriteCsvAdvanced
+  isSpec: "True"
+  fullName: Useful.Tests.CsvTests.WriteCsvAdvanced
+  nameWithType: CsvTests.WriteCsvAdvanced
+- uid: Useful.Tests.CsvTests.WriteCsvBasic
+  name: WriteCsvBasic()
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvBasic
+  commentId: M:Useful.Tests.CsvTests.WriteCsvBasic
+  fullName: Useful.Tests.CsvTests.WriteCsvBasic()
+  nameWithType: CsvTests.WriteCsvBasic()
+- uid: Useful.Tests.CsvTests.WriteCsvBasic*
+  name: WriteCsvBasic
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvBasic_
+  commentId: Overload:Useful.Tests.CsvTests.WriteCsvBasic
+  isSpec: "True"
+  fullName: Useful.Tests.CsvTests.WriteCsvBasic
+  nameWithType: CsvTests.WriteCsvBasic
+- uid: Useful.Tests.CsvTests.WriteCsvFile
+  name: WriteCsvFile()
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvFile
+  commentId: M:Useful.Tests.CsvTests.WriteCsvFile
+  fullName: Useful.Tests.CsvTests.WriteCsvFile()
+  nameWithType: CsvTests.WriteCsvFile()
+- uid: Useful.Tests.CsvTests.WriteCsvFile*
+  name: WriteCsvFile
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvFile_
+  commentId: Overload:Useful.Tests.CsvTests.WriteCsvFile
+  isSpec: "True"
+  fullName: Useful.Tests.CsvTests.WriteCsvFile
+  nameWithType: CsvTests.WriteCsvFile
+- uid: Useful.Tests.CsvTests.WriteCsvFormatProvider
+  name: WriteCsvFormatProvider()
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvFormatProvider
+  commentId: M:Useful.Tests.CsvTests.WriteCsvFormatProvider
+  fullName: Useful.Tests.CsvTests.WriteCsvFormatProvider()
+  nameWithType: CsvTests.WriteCsvFormatProvider()
+- uid: Useful.Tests.CsvTests.WriteCsvFormatProvider*
+  name: WriteCsvFormatProvider
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvFormatProvider_
+  commentId: Overload:Useful.Tests.CsvTests.WriteCsvFormatProvider
+  isSpec: "True"
+  fullName: Useful.Tests.CsvTests.WriteCsvFormatProvider
+  nameWithType: CsvTests.WriteCsvFormatProvider
+- uid: Useful.Tests.CsvTests.WriteCsvQuoteException
+  name: WriteCsvQuoteException()
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvQuoteException
+  commentId: M:Useful.Tests.CsvTests.WriteCsvQuoteException
+  fullName: Useful.Tests.CsvTests.WriteCsvQuoteException()
+  nameWithType: CsvTests.WriteCsvQuoteException()
+- uid: Useful.Tests.CsvTests.WriteCsvQuoteException*
+  name: WriteCsvQuoteException
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvQuoteException_
+  commentId: Overload:Useful.Tests.CsvTests.WriteCsvQuoteException
+  isSpec: "True"
+  fullName: Useful.Tests.CsvTests.WriteCsvQuoteException
+  nameWithType: CsvTests.WriteCsvQuoteException
+- uid: Useful.Tests.CsvTests.WriteCsvSeperatorException
+  name: WriteCsvSeperatorException()
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvSeperatorException
+  commentId: M:Useful.Tests.CsvTests.WriteCsvSeperatorException
+  fullName: Useful.Tests.CsvTests.WriteCsvSeperatorException()
+  nameWithType: CsvTests.WriteCsvSeperatorException()
+- uid: Useful.Tests.CsvTests.WriteCsvSeperatorException*
+  name: WriteCsvSeperatorException
+  href: docs/Useful.Tests.CsvTests.html#Useful_Tests_CsvTests_WriteCsvSeperatorException_
+  commentId: Overload:Useful.Tests.CsvTests.WriteCsvSeperatorException
+  isSpec: "True"
+  fullName: Useful.Tests.CsvTests.WriteCsvSeperatorException
+  nameWithType: CsvTests.WriteCsvSeperatorException
+- uid: Useful.Tests.Helpers
+  name: Helpers
+  href: docs/Useful.Tests.Helpers.html
+  commentId: T:Useful.Tests.Helpers
+  fullName: Useful.Tests.Helpers
+  nameWithType: Helpers
+- uid: Useful.Tests.Helpers.CleanOutput(System.IO.StringWriter)
+  name: CleanOutput(StringWriter)
+  href: docs/Useful.Tests.Helpers.html#Useful_Tests_Helpers_CleanOutput_System_IO_StringWriter_
+  commentId: M:Useful.Tests.Helpers.CleanOutput(System.IO.StringWriter)
+  fullName: Useful.Tests.Helpers.CleanOutput(System.IO.StringWriter)
+  nameWithType: Helpers.CleanOutput(StringWriter)
+- uid: Useful.Tests.Helpers.CleanOutput*
+  name: CleanOutput
+  href: docs/Useful.Tests.Helpers.html#Useful_Tests_Helpers_CleanOutput_
+  commentId: Overload:Useful.Tests.Helpers.CleanOutput
+  isSpec: "True"
+  fullName: Useful.Tests.Helpers.CleanOutput
+  nameWithType: Helpers.CleanOutput
+- uid: Useful.Tests.Helpers.GetReader(System.IO.MemoryStream)
+  name: GetReader(MemoryStream)
+  href: docs/Useful.Tests.Helpers.html#Useful_Tests_Helpers_GetReader_System_IO_MemoryStream_
+  commentId: M:Useful.Tests.Helpers.GetReader(System.IO.MemoryStream)
+  fullName: Useful.Tests.Helpers.GetReader(System.IO.MemoryStream)
+  nameWithType: Helpers.GetReader(MemoryStream)
+- uid: Useful.Tests.Helpers.GetReader*
+  name: GetReader
+  href: docs/Useful.Tests.Helpers.html#Useful_Tests_Helpers_GetReader_
+  commentId: Overload:Useful.Tests.Helpers.GetReader
+  isSpec: "True"
+  fullName: Useful.Tests.Helpers.GetReader
+  nameWithType: Helpers.GetReader
+- uid: Useful.Tests.Helpers.WriteLineAsync(System.IO.MemoryStream,System.String)
+  name: WriteLineAsync(MemoryStream, String)
+  href: docs/Useful.Tests.Helpers.html#Useful_Tests_Helpers_WriteLineAsync_System_IO_MemoryStream_System_String_
+  commentId: M:Useful.Tests.Helpers.WriteLineAsync(System.IO.MemoryStream,System.String)
+  fullName: Useful.Tests.Helpers.WriteLineAsync(System.IO.MemoryStream, System.String)
+  nameWithType: Helpers.WriteLineAsync(MemoryStream, String)
+- uid: Useful.Tests.Helpers.WriteLineAsync*
+  name: WriteLineAsync
+  href: docs/Useful.Tests.Helpers.html#Useful_Tests_Helpers_WriteLineAsync_
+  commentId: Overload:Useful.Tests.Helpers.WriteLineAsync
+  isSpec: "True"
+  fullName: Useful.Tests.Helpers.WriteLineAsync
+  nameWithType: Helpers.WriteLineAsync
+- uid: Useful.Tests.PromptTests
+  name: PromptTests
+  href: docs/Useful.Tests.PromptTests.html
+  commentId: T:Useful.Tests.PromptTests
+  fullName: Useful.Tests.PromptTests
+  nameWithType: PromptTests
+- uid: Useful.Tests.PromptTests.CustomPrompt
+  name: CustomPrompt()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_CustomPrompt
+  commentId: M:Useful.Tests.PromptTests.CustomPrompt
+  fullName: Useful.Tests.PromptTests.CustomPrompt()
+  nameWithType: PromptTests.CustomPrompt()
+- uid: Useful.Tests.PromptTests.CustomPrompt*
+  name: CustomPrompt
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_CustomPrompt_
+  commentId: Overload:Useful.Tests.PromptTests.CustomPrompt
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.CustomPrompt
+  nameWithType: PromptTests.CustomPrompt
+- uid: Useful.Tests.PromptTests.Defaults
+  name: Defaults()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_Defaults
+  commentId: M:Useful.Tests.PromptTests.Defaults
+  fullName: Useful.Tests.PromptTests.Defaults()
+  nameWithType: PromptTests.Defaults()
+- uid: Useful.Tests.PromptTests.Defaults*
+  name: Defaults
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_Defaults_
+  commentId: Overload:Useful.Tests.PromptTests.Defaults
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.Defaults
+  nameWithType: PromptTests.Defaults
+- uid: Useful.Tests.PromptTests.LineHandlerAndWriteLine
+  name: LineHandlerAndWriteLine()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_LineHandlerAndWriteLine
+  commentId: M:Useful.Tests.PromptTests.LineHandlerAndWriteLine
+  fullName: Useful.Tests.PromptTests.LineHandlerAndWriteLine()
+  nameWithType: PromptTests.LineHandlerAndWriteLine()
+- uid: Useful.Tests.PromptTests.LineHandlerAndWriteLine*
+  name: LineHandlerAndWriteLine
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_LineHandlerAndWriteLine_
+  commentId: Overload:Useful.Tests.PromptTests.LineHandlerAndWriteLine
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.LineHandlerAndWriteLine
+  nameWithType: PromptTests.LineHandlerAndWriteLine
+- uid: Useful.Tests.PromptTests.LineHandlerUnhandledException
+  name: LineHandlerUnhandledException()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_LineHandlerUnhandledException
+  commentId: M:Useful.Tests.PromptTests.LineHandlerUnhandledException
+  fullName: Useful.Tests.PromptTests.LineHandlerUnhandledException()
+  nameWithType: PromptTests.LineHandlerUnhandledException()
+- uid: Useful.Tests.PromptTests.LineHandlerUnhandledException*
+  name: LineHandlerUnhandledException
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_LineHandlerUnhandledException_
+  commentId: Overload:Useful.Tests.PromptTests.LineHandlerUnhandledException
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.LineHandlerUnhandledException
+  nameWithType: PromptTests.LineHandlerUnhandledException
+- uid: Useful.Tests.PromptTests.MissingHandler
+  name: MissingHandler()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_MissingHandler
+  commentId: M:Useful.Tests.PromptTests.MissingHandler
+  fullName: Useful.Tests.PromptTests.MissingHandler()
+  nameWithType: PromptTests.MissingHandler()
+- uid: Useful.Tests.PromptTests.MissingHandler*
+  name: MissingHandler
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_MissingHandler_
+  commentId: Overload:Useful.Tests.PromptTests.MissingHandler
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.MissingHandler
+  nameWithType: PromptTests.MissingHandler
+- uid: Useful.Tests.PromptTests.OnStartup
+  name: OnStartup()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_OnStartup
+  commentId: M:Useful.Tests.PromptTests.OnStartup
+  fullName: Useful.Tests.PromptTests.OnStartup()
+  nameWithType: PromptTests.OnStartup()
+- uid: Useful.Tests.PromptTests.OnStartup*
+  name: OnStartup
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_OnStartup_
+  commentId: Overload:Useful.Tests.PromptTests.OnStartup
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.OnStartup
+  nameWithType: PromptTests.OnStartup
+- uid: Useful.Tests.PromptTests.QuitLine
+  name: QuitLine()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_QuitLine
+  commentId: M:Useful.Tests.PromptTests.QuitLine
+  fullName: Useful.Tests.PromptTests.QuitLine()
+  nameWithType: PromptTests.QuitLine()
+- uid: Useful.Tests.PromptTests.QuitLine*
+  name: QuitLine
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_QuitLine_
+  commentId: Overload:Useful.Tests.PromptTests.QuitLine
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.QuitLine
+  nameWithType: PromptTests.QuitLine
+- uid: Useful.Tests.PromptTests.TestCleanup
+  name: TestCleanup()
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_TestCleanup
+  commentId: M:Useful.Tests.PromptTests.TestCleanup
+  fullName: Useful.Tests.PromptTests.TestCleanup()
+  nameWithType: PromptTests.TestCleanup()
+- uid: Useful.Tests.PromptTests.TestCleanup*
+  name: TestCleanup
+  href: docs/Useful.Tests.PromptTests.html#Useful_Tests_PromptTests_TestCleanup_
+  commentId: Overload:Useful.Tests.PromptTests.TestCleanup
+  isSpec: "True"
+  fullName: Useful.Tests.PromptTests.TestCleanup
+  nameWithType: PromptTests.TestCleanup

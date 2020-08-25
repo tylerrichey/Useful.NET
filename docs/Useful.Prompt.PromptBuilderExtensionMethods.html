@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PromptBuilderExtensionMethods
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PromptBuilderExtensionMethods
+   ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Useful.Prompt.PromptBuilderExtensionMethods">
+  
+  
+  <h1 id="Useful_Prompt_PromptBuilderExtensionMethods" data-uid="Useful.Prompt.PromptBuilderExtensionMethods" class="text-break">Class PromptBuilderExtensionMethods
+  </h1>
+  <div class="markdown level0 summary"><p>Building extension methods for a fluent Prompt configuration</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PromptBuilderExtensionMethods</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Useful.Prompt.html">Useful.Prompt</a></h6>
+  <h6><strong>Assembly</strong>: Useful.Prompt.dll</h6>
+  <h5 id="Useful_Prompt_PromptBuilderExtensionMethods_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PromptBuilderExtensionMethods : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetAutoPromptUpdateIfUnlockedTimeSpan_Useful_Prompt_PromptBuilder_TimeSpan_.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan(Useful.Prompt.PromptBuilder%2CTimeSpan)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L109">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetAutoPromptUpdateIfUnlockedTimeSpan_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetAutoPromptUpdateIfUnlockedTimeSpan_Useful_Prompt_PromptBuilder_TimeSpan_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetAutoPromptUpdateIfUnlockedTimeSpan(Useful.Prompt.PromptBuilder,TimeSpan)">SetAutoPromptUpdateIfUnlockedTimeSpan(PromptBuilder, TimeSpan)</h4>
+  <div class="markdown level1 summary"><p>Define a timepsan to automatically update the prompt at an interval. Useful for including things like date/time in your prompts. Note, if the prompt is &quot;locked&quot; when the auto update occurs, it will just skip it instead of waiting since it will be updated on unlock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetAutoPromptUpdateIfUnlockedTimeSpan(this PromptBuilder promptBuilder, TimeSpan timeSpan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TimeSpan</span></td>
+        <td><span class="parametername">timeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetConsoleWriter_Useful_Prompt_PromptBuilder_Useful_Prompt_IConsole_.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter(Useful.Prompt.PromptBuilder%2CUseful.Prompt.IConsole)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L20">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetConsoleWriter_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetConsoleWriter_Useful_Prompt_PromptBuilder_Useful_Prompt_IConsole_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetConsoleWriter(Useful.Prompt.PromptBuilder,Useful.Prompt.IConsole)">SetConsoleWriter(PromptBuilder, IConsole)</h4>
+  <div class="markdown level1 summary"><p>Override the default console writer to do things like use colors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetConsoleWriter(this PromptBuilder promptBuilder, IConsole console)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.IConsole.html">IConsole</a></td>
+        <td><span class="parametername">console</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetKeyHandler_Useful_Prompt_PromptBuilder_Func_ConsoleKeyInfo_Task__.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler(Useful.Prompt.PromptBuilder%2CFunc%7BConsoleKeyInfo%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L57">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetKeyHandler_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetKeyHandler_Useful_Prompt_PromptBuilder_Func_ConsoleKeyInfo_Task__" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetKeyHandler(Useful.Prompt.PromptBuilder,Func{ConsoleKeyInfo,Task})">SetKeyHandler(PromptBuilder, Func&lt;ConsoleKeyInfo, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Define a handler function for Console.ReadKey(). If you use keys, you can't define a line handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetKeyHandler(this PromptBuilder promptBuilder, Func&lt;ConsoleKeyInfo, Task&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">ConsoleKeyInfo</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetLineHandler_Useful_Prompt_PromptBuilder_Func_System_String_Task__.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler(Useful.Prompt.PromptBuilder%2CFunc%7BSystem.String%2CTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L83">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetLineHandler_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetLineHandler_Useful_Prompt_PromptBuilder_Func_System_String_Task__" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetLineHandler(Useful.Prompt.PromptBuilder,Func{System.String,Task})">SetLineHandler(PromptBuilder, Func&lt;String, Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Define a handler function for Console.ReadLine() inputs. If you use lines, you can't define a key handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetLineHandler(this PromptBuilder promptBuilder, Func&lt;string, Task&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetOnStartupAction_Useful_Prompt_PromptBuilder_Func_Task__.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction(Useful.Prompt.PromptBuilder%2CFunc%7BTask%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L32">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetOnStartupAction_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetOnStartupAction_Useful_Prompt_PromptBuilder_Func_Task__" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetOnStartupAction(Useful.Prompt.PromptBuilder,Func{Task})">SetOnStartupAction(PromptBuilder, Func&lt;Task&gt;)</h4>
+  <div class="markdown level1 summary"><p>Define an action to run after you initialize the Prompt, but before the user gets the prompt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetOnStartupAction(this PromptBuilder promptBuilder, Func&lt;Task&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetPopulatePromptAction_Useful_Prompt_PromptBuilder_Func_Task_System_String___.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction(Useful.Prompt.PromptBuilder%2CFunc%7BTask%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L45">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetPopulatePromptAction_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetPopulatePromptAction_Useful_Prompt_PromptBuilder_Func_Task_System_String___" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetPopulatePromptAction(Useful.Prompt.PromptBuilder,Func{Task{System.String}})">SetPopulatePromptAction(PromptBuilder, Func&lt;Task&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Define a function that returns the string that populates the prompt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetPopulatePromptAction(this PromptBuilder promptBuilder, Func&lt;Task&lt;string&gt;&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetQuitKeyInfo_Useful_Prompt_PromptBuilder_ConsoleKey_.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo(Useful.Prompt.PromptBuilder%2CConsoleKey)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L71">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetQuitKeyInfo_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetQuitKeyInfo_Useful_Prompt_PromptBuilder_ConsoleKey_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetQuitKeyInfo(Useful.Prompt.PromptBuilder,ConsoleKey)">SetQuitKeyInfo(PromptBuilder, ConsoleKey)</h4>
+  <div class="markdown level1 summary"><p>Override the default key for quitting the Prompt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetQuitKeyInfo(this PromptBuilder promptBuilder, ConsoleKey consoleKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ConsoleKey</span></td>
+        <td><span class="parametername">consoleKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods_SetQuitLine_Useful_Prompt_PromptBuilder_System_String_.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine(Useful.Prompt.PromptBuilder%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L97">View Source</a>
+  </span>
+  <a id="Useful_Prompt_PromptBuilderExtensionMethods_SetQuitLine_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine*"></a>
+  <h4 id="Useful_Prompt_PromptBuilderExtensionMethods_SetQuitLine_Useful_Prompt_PromptBuilder_System_String_" data-uid="Useful.Prompt.PromptBuilderExtensionMethods.SetQuitLine(Useful.Prompt.PromptBuilder,System.String)">SetQuitLine(PromptBuilder, String)</h4>
+  <div class="markdown level1 summary"><p>Override the default line for quitting the Prompt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PromptBuilder SetQuitLine(this PromptBuilder promptBuilder, string quitLine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td><span class="parametername">promptBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">quitLine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Useful.Prompt.PromptBuilder.html">PromptBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/tylerrichey/Useful.NET/new/master/apiSpec/new?filename=Useful_Prompt_PromptBuilderExtensionMethods.md&amp;value=---%0Auid%3A%20Useful.Prompt.PromptBuilderExtensionMethods%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/tylerrichey/Useful.NET/blob/master/Useful.Prompt/PromptBuilderExtensionMethods.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
